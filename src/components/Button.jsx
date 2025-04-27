@@ -17,10 +17,16 @@ const Button = ({ buttons }) => {
                         key={index}
                         href={button.href}
                         onClick={button.onClick}
-                        className={`w-32 lg:w-48 px-2 py-4 font-bold uppercase text-base text-center ${button.variant === "primary"
-                            ? "text-white bg-[#000000] hover:bg-[#fee7f2]"
-                            : "bg-white text-black hover:bg-[#ab0757]"
-                            }`}
+                        className={`p-4 font-semibold uppercase text-sm text-center rounded-xl 
+                            ${button.variant === "primary"
+                                ? "text-white bg-[#000000] hover:bg-white hover:text-[#000000]"
+                                : button.variant === "secondary"
+                                    ? "bg-white text-black hover:bg-[#ab0757]"
+                                    : button.variant === "simple"
+                                        ? "bg-transparent border-2 border-[#640433] text-black hover:bg-[#640433] hover:text-white hover:border-[#640433]"
+                                        : button.variant === "elevated"
+                                            ? "bg-black border-2 text-white hover:text-black hover:border-[#640433] hover:bg-transparent"
+                                            : ""}`}
                     >
                         {button.label}
                     </ButtonTag>
@@ -37,7 +43,7 @@ Button.propTypes = {
             href: PropTypes.string,
             onClick: PropTypes.func,
             label: PropTypes.string.isRequired,
-            variant: PropTypes.oneOf(["primary", "secondary"]).isRequired,
+            variant: PropTypes.oneOf(["primary", "secondary", "simple", "elevated"]).isRequired,
         })
     ).isRequired,
 };

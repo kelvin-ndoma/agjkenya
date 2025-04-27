@@ -21,7 +21,7 @@ export default Count
  * ==============   Styles   ================
  */
 const text = {
-    fontSize: 64,
-    color: "#7a7a7a",
-    fontWeight: 100,
+    fontSize: 84,
+    color: "#000000",
+    fontWeight: 200,
 }
