@@ -1,48 +1,55 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Hero from '../components/Hero';
 // import { containerVariants, itemVariants, fadeIn } from '../components/Variants'
 import FourColCards from '../components/FourColCards';
-import user from '../assets/user-avatar.jpg';
+import annete from '../assets/annete.jpg';
+import teresia from '../assets/teresia.jpg';
+import dennis from '../assets/dennis.jpg';
+import molly from '../assets/molly.jpg';
+import bosco from '../assets/bosco.jpg';
+import martin from '../assets/martin.jpg';
+import james from '../assets/james.jpg';
+import benja from '../assets/benja.jpg';
 
 const About = () => {
   const employeeInfo= [
     {
-      employeePic: user,
+      employeePic: annete,
       employeeName: 'Annette Kimeu',
       employeeRole: 'Programs Manager',
     },
     {
-      employeePic: user,
+      employeePic: teresia,
       employeeName: 'Teresia Aluoch',
       employeeRole: 'Public Relations',
     },
     {
-      employeePic: user,
+      employeePic: dennis,
       employeeName: 'Dennis Beru',
       employeeRole: 'Chairperson',
     },
     {
-      employeePic: user,
+      employeePic: molly,
       employeeName: 'Molly Peter’s',
       employeeRole: 'Vice-Chairperson',
     },
     {
-      employeePic: user,
+      employeePic: bosco,
       employeeName: 'Bosco Kathima',
       employeeRole: 'National Coordinator',
     },
     {
-      employeePic: user,
+      employeePic: martin,
       employeeName: 'Martin Kedenge',
       employeeRole: 'Secretary',
     },
     {
-      employeePic: user,
+      employeePic: james,
       employeeName: 'James Mbulo Dolo',
       employeeRole: 'Treasurer',
     },
     {
-      employeePic: user,
+      employeePic: benja,
       employeeName: 'Benjamin Radonde',
       employeeRole: 'Accountant',
     }
