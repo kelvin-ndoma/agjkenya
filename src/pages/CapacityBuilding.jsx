@@ -46,7 +46,7 @@ const CapacityBuilding = () => {
     <div className="w-full bg-gray-50">
       {/* Hero Section */}
       <motion.section 
-        className="w-full bg-gradient-to-br from-[#800000] to-[#600000] py-24 md:py-32 relative overflow-hidden"
+        className="w-full bg-gradient-to-br from-[#640433] to-[#420218] py-24 md:py-32 relative overflow-hidden"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -78,7 +78,7 @@ const CapacityBuilding = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-[#800000] mb-8 text-center"
+            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Mentorship Program
@@ -117,10 +117,10 @@ const CapacityBuilding = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Program Focus */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#800000]"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-[#800000] mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-[#640433] mb-4 flex items-center">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
@@ -128,19 +128,19 @@ const CapacityBuilding = () => {
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-[#800000] mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Health Reporting (SRHR)</strong> – Training on sensitive and accurate reporting of sexual and reproductive health issues</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#800000] mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Climate Change & Environment</strong> – Developing skills to report on environmental challenges and solutions</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#800000] mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Gender-Sensitive Reporting</strong> – Promoting balanced and inclusive journalism practices</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#800000] mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Audio Production</strong> – Skills development for podcasting and radio journalism</span>
                 </li>
               </ul>
@@ -148,19 +148,19 @@ const CapacityBuilding = () => {
 
             {/* Program Details */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#800000]"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-[#800000] mb-4">Program Structure</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4">Program Structure</h3>
               <p className="text-gray-700 mb-4">
                 The 5-month program (April-August 2025) combines virtual and in-person sessions, with participants receiving personalized mentorship from seasoned journalists. Each participant will develop and publish at least one in-depth story in their focus area.
               </p>
-              <h3 className="text-xl font-bold text-[#800000] mb-4 mt-6">Expected Outcomes</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4 mt-6">Expected Outcomes</h3>
               <p className="text-gray-700 mb-4">
                 Participants will emerge with enhanced reporting skills, a stronger professional network, and published work that demonstrates their expertise. Outstanding stories will be recognized at the AGJK Community Journalism Awards.
               </p>
-              <div className="bg-[#800000]/10 p-4 rounded-lg mt-4">
-                <p className="text-[#800000] font-medium">
+              <div className="bg-[#640433]/10 p-4 rounded-lg mt-4">
+                <p className="text-[#640433] font-medium">
                   Join the conversation: <span className="font-bold">#AGJKMentorship #JournalismForImpact</span>
                 </p>
               </div>
@@ -177,7 +177,7 @@ const CapacityBuilding = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-green-700 mb-8 text-center"
+            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Community Media Conference
@@ -196,7 +196,7 @@ const CapacityBuilding = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                 <div>
-                  <span className="inline-block bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-2">
+                  <span className="inline-block bg-[#640433] text-white px-4 py-1 rounded-full text-sm font-bold mb-2">
                     Completed
                   </span>
                   <h3 className="text-2xl font-bold text-white">
@@ -216,10 +216,10 @@ const CapacityBuilding = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Conference Highlights */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-600"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-[#640433] mb-4 flex items-center">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -227,19 +227,19 @@ const CapacityBuilding = () => {
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
+                  <span className="text-[#640433] mr-2">✓</span>
                   <span><strong>Keynote addresses</strong> from media leaders and policymakers</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
+                  <span className="text-[#640433] mr-2">✓</span>
                   <span><strong>Panel discussions</strong> on SRHR reporting, climate journalism, and media sustainability</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
+                  <span className="text-[#640433] mr-2">✓</span>
                   <span><strong>Skills workshops</strong> on investigative techniques and digital storytelling</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">✓</span>
+                  <span className="text-[#640433] mr-2">✓</span>
                   <span><strong>Networking sessions</strong> with media organizations and CSOs</span>
                 </li>
               </ul>
@@ -247,10 +247,10 @@ const CapacityBuilding = () => {
 
             {/* Partner Organizations */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-600"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-green-700 mb-4">Partner Organizations</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4">Partner Organizations</h3>
               <p className="text-gray-700 mb-4">
                 The conference featured participation from leading organizations including:
               </p>
@@ -266,7 +266,7 @@ const CapacityBuilding = () => {
                   "TICAH",
                   "TISA"
                 ].map((org, index) => (
-                  <span key={index} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                  <span key={index} className="bg-[#640433]/10 text-[#640433] px-3 py-1 rounded-full text-sm">
                     {org}
                   </span>
                 ))}
@@ -275,21 +275,21 @@ const CapacityBuilding = () => {
 
             {/* Conference Outcomes */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-600 md:col-span-2"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433] md:col-span-2"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-green-700 mb-4">Conference Outcomes</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4">Conference Outcomes</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">→</span>
+                  <span className="text-[#640433] mr-2">→</span>
                   <span>Strengthened networks among community journalists across Kenya</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">→</span>
+                  <span className="text-[#640433] mr-2">→</span>
                   <span>Development of a community media charter outlining best practices</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2">→</span>
+                  <span className="text-[#640433] mr-2">→</span>
                   <span>Commitments from partners to support grassroots journalism initiatives</span>
                 </li>
               </ul>
@@ -306,7 +306,7 @@ const CapacityBuilding = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-blue-700 mb-8 text-center"
+            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Community Journalism Awards
@@ -325,7 +325,7 @@ const CapacityBuilding = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                 <div>
-                  <span className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-2">
+                  <span className="inline-block bg-[#640433] text-white px-4 py-1 rounded-full text-sm font-bold mb-2">
                     Annual Event
                   </span>
                   <h3 className="text-2xl font-bold text-white">
@@ -345,10 +345,10 @@ const CapacityBuilding = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Award Categories */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-[#640433] mb-4 flex items-center">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
@@ -356,19 +356,19 @@ const CapacityBuilding = () => {
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Health Reporting</strong> – Excellence in SRHR and public health journalism</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Environmental Reporting</strong> – Outstanding coverage of climate and environmental issues</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Gender Equality Reporting</strong> – Stories promoting gender equity</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2 mt-1">•</span>
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
                   <span><strong>Community Impact Story</strong> – Journalism that drives positive change</span>
                 </li>
               </ul>
@@ -376,14 +376,14 @@ const CapacityBuilding = () => {
 
             {/* Award Impact */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-blue-700 mb-4">Impact of the Awards</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4">Impact of the Awards</h3>
               <p className="text-gray-700 mb-4">
                 Since inception, the awards have recognized over 50 journalists from across Kenya. Winners receive cash prizes, mentorship opportunities, and platforms to showcase their work to wider audiences.
               </p>
-              <h3 className="text-xl font-bold text-blue-700 mb-4 mt-6">2024 Highlights</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4 mt-6">2024 Highlights</h3>
               <p className="text-gray-700">
                 The 2024 awards ceremony was held in Nairobi, with winners selected from over 200 submissions. Winning stories addressed critical issues including maternal health, climate adaptation, and gender-based violence.
               </p>
@@ -391,18 +391,18 @@ const CapacityBuilding = () => {
 
             {/* Join Conversation */}
             <motion.div 
-              className="bg-gradient-to-r from-blue-600 to-blue-800 p-6 rounded-xl shadow-lg md:col-span-2"
+              className="bg-gradient-to-r from-[#640433] to-[#420218] p-6 rounded-xl shadow-lg md:col-span-2"
               variants={itemVariants}
             >
               <h3 className="text-xl font-bold text-white mb-4">Nominate for 2025 Awards</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-[#ffffffcc] mb-4">
                 Nominations for the 2025 AGJK Community Journalism Awards will open in September 2025. Stay tuned for updates on categories, judging criteria, and submission guidelines.
               </p>
               <div className="mt-4 flex flex-wrap gap-3">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white text-blue-700">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white text-[#640433]">
                   #AGJKAwards
                 </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white text-blue-700">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white text-[#640433]">
                   #CommunityJournalism
                 </span>
               </div>
@@ -419,7 +419,7 @@ const CapacityBuilding = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-[#800000] mb-8 text-center"
+            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Training Gallery
@@ -445,7 +445,7 @@ const CapacityBuilding = () => {
             ].map((item, index) => (
               <motion.div 
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#800000]"
+                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433]"
                 variants={itemVariants}
                 custom={index}
                 whileHover={{ y: -5 }}
@@ -466,7 +466,7 @@ const CapacityBuilding = () => {
 
         {/* CTA Section */}
         <motion.section 
-          className="text-center bg-[#800000] rounded-2xl py-16 px-6 text-white"
+          className="text-center bg-[#640433] rounded-2xl py-16 px-6 text-white"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -480,7 +480,7 @@ const CapacityBuilding = () => {
           </p>
           <div className="mt-8">
             <motion.button 
-              className="px-8 py-4 border-2 border-white text-base font-medium rounded-md text-[#800000] bg-white hover:bg-transparent hover:text-white transition-colors md:py-4 md:text-lg md:px-10"
+              className="px-8 py-4 border-2 border-white text-base font-medium rounded-md text-[#640433] bg-white hover:bg-transparent hover:text-white transition-colors md:py-4 md:text-lg md:px-10"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

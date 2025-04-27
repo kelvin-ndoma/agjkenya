@@ -44,7 +44,7 @@ const AdvocacyCampaigns = () => {
     <div className="w-full bg-gray-50">
       {/* Hero Section */}
       <motion.section 
-        className="w-full bg-gradient-to-br from-[#800000] to-[#600000] py-24 md:py-32 relative overflow-hidden"
+        className="w-full bg-gradient-to-br from-[#640433] to-[#600000] py-24 md:py-32 relative overflow-hidden"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -76,7 +76,7 @@ const AdvocacyCampaigns = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-[#800000] mb-8 text-center"
+            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Youth Voices Project
@@ -115,10 +115,10 @@ const AdvocacyCampaigns = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Key Focus Areas */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#800000]"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-[#800000] mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-[#640433] mb-4 flex items-center">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
@@ -150,22 +150,22 @@ const AdvocacyCampaigns = () => {
 
             {/* Project Details */}
             <motion.div 
-              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#800000]"
+              className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-[#800000] mb-4">The Journey So Far</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4">The Journey So Far</h3>
               <p className="text-gray-700 mb-4">
                 The project, which kicked off in September 2024, has already seen tremendous engagement and enthusiasm from participants. With ongoing training sessions, hands-on practice, and mentorship, the youth are set to emerge as digital entrepreneurs and change-makers in their communities.
               </p>
-              <h3 className="text-xl font-bold text-[#800000] mb-4 mt-6">Looking Ahead</h3>
+              <h3 className="text-xl font-bold text-[#640433] mb-4 mt-6">Looking Ahead</h3>
               <p className="text-gray-700 mb-4">
                 As we continue to empower the next generation, we invite stakeholders, digital professionals, and the community to support and collaborate in this journey. The future of digital content creation in Kenya is bright, and through projects like Sauti ya Mukuru, we are shaping a more inclusive and economically empowered society.
               </p>
               <p className="text-gray-700">
                 Stay tuned for updates as we showcase the incredible stories and content created by our young changemakers!
               </p>
-              <div className="bg-[#800000]/10 p-4 rounded-lg mt-4">
-                <p className="text-[#800000] font-medium">
+              <div className="bg-[#640433]/12 p-4 rounded-lg mt-4">
+                <p className="text-[#640433] font-medium">
                   Join the conversation: <span className="font-bold">#YouthVoices #SautiyaMukuru #DigitalEmpowerment</span>
                 </p>
               </div>
@@ -578,7 +578,7 @@ const AdvocacyCampaigns = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-[#800000] mb-8 text-center"
+            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Upcoming Campaigns
