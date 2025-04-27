@@ -43,6 +43,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-20">
                     <Link to="/" className="flex-shrink-0 flex items-center">
                         <img className="h-12 w-auto" src={logo} alt="AGJ Kenya" />
+                        {/* Is this supposed to be here? */}
                         <span className="ml-2 text-xl font-semibold text-[#800000] hidden md:block">
                             AGJ Kenya
                         </span>
