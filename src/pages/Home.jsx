@@ -3,10 +3,8 @@ import { motion } from 'framer-motion';
 import ContentSection from '../components/ContentSection';
 import Cards from '../components/Cards';
 import Button from '../components/Button';
-// import Count from '../components/Count';
-
 import { itemVariants } from '../components/Variants';
-import mic from '../assets/mic.jpg'
+import mic from '../assets/mic-2.png'
 import { Testimonials } from './Testimonials';
 import Partners from '../components/Partners';
 
@@ -40,7 +38,7 @@ export default function Home() {
     // max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16
     <div className="home">
       <ContentSection
-        title="Background"
+        // title="Background"
         text={textContent}
         imageSrc={mic}
         imageAlt="AGJ Kenya"

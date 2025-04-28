@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { containerVariants, itemVariants, fadeIn } from './Variants';
 
-const Hero = ({ title, titleExt, subtitle, bgColorFrom, bgColorTo }) => {
+const Hero = ({ title, titleExt, subtitle }) => {
     return (
         <motion.section
-            className={`w-full bg-gradient-to-br from-[${bgColorFrom}] to-[${bgColorTo}] py-24 md:py-32 relative overflow-hidden`}
+            className={`w-full bg-[#640433] py-24 md:py-32 relative overflow-hidden`}
             initial="hidden"
             animate="visible"
             variants={containerVariants}
