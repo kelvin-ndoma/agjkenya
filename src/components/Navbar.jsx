@@ -42,11 +42,11 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
                     <Link to="/" className="flex-shrink-0 flex items-center">
-                        <img className="h-12 w-auto" src={logo} alt="AGJ Kenya" />
+                        <img className="h-22 w-auto" src={logo} alt="AGJ Kenya" />
                         {/* Is this supposed to be here? */}
-                        <span className="ml-2 text-xl font-semibold text-[#800000] hidden md:block">
+                        {/* <span className="ml-2 text-xl font-semibold text-[#800000] hidden md:block">
                             AGJ Kenya
-                        </span>
+                        </span> */}
                     </Link>
 
                     {/* Mobile menu button */}

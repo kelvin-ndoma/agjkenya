@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero';
+import Marquee from '../components/Marquee';
 // import { containerVariants, itemVariants, fadeIn } from '../components/Variants'
 import FourColCards from '../components/FourColCards';
 import annete from '../assets/annete.jpg';
@@ -12,7 +13,7 @@ import james from '../assets/james.jpg';
 import benja from '../assets/benja.jpg';
 
 const About = () => {
-  const employeeInfo= [
+  const employeeInfo = [
     {
       employeePic: annete,
       employeeName: 'Annette Kimeu',
@@ -69,8 +70,20 @@ const About = () => {
           <span className='text-gray-600 pl-2'>Innovation</span>
         </p>
         <p className='font-thin'>Every one of our team members is dedicated and passionate in sieng AGJK achieve its mission​</p>
+
         {/* team */}
         <FourColCards cards={employeeInfo} />
+
+        {/* partners */}
+        <p className='text-xl md:text-3xl font-bold text-start'>
+          <span className=''>Our</span>
+          <span className='text-gray-600 pl-2'>Partners</span>
+        </p>
+        <p className='text-xl md:text-2xl font-bold text-start capitalize py-4 space-y-4 text-[#640433]'>
+          <span> Collaborative excellence: Building bridges, <br/></span>
+          <span>driving success</span>
+        </p>
+        <Marquee />
       </div>
     </>
   )
