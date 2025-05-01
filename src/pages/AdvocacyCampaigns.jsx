@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import youthVoicesImage from '../assets/mic.jpg';
-import tukisongaImage from '../assets/mic.jpg';
-import polandKenyaImage from '../assets/mic.jpg';
+import youthVoicesImage from '../assets/mic.webp';
+import tukisongaImage from '../assets/mic.webp';
+import polandKenyaImage from '../assets/mic.webp';
 
 // Animation variants
 const containerVariants = {
