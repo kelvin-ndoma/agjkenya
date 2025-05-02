@@ -25,11 +25,6 @@ export const Testimonials = () => {
             description: 'We believe in leading by example. AGJK is committed to strengthening its internal structures, governance systems, and sustainability strategies to remain a credible, transparent, and effective organization. By investing in our own growth—through strategic planning, partnerships, resource mobilization, and team development—we ensure that our mission has long-term impact and that we continue to serve as a strong voice for grassroots journalists across Kenya and beyond.',
             icon: mic,
         },
-        {
-            title: 'Advocacy and Networking',
-            description: 'We are committed to actively championing the fundamental rights of all our journalist members, ensuring equitable treatment and protection under the law, regardless of their location or specialization. Furthermore, we foster a dynamic global networking platform, connecting professionals across borders to facilitate collaboration, knowledge sharing, and mutual support within the industry.',
-            icon: mic,
-        },
     ];
 
     const testimonialsData = [

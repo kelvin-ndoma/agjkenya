@@ -4,7 +4,7 @@ import { itemVariants } from "./Variants";
 
 const TestimonialCard = ({ quote, name, title, image }) => (
     <motion.div
-        className="flex flex-col items-start justify-start p-4 md:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433] bg-white"
+        className="flex flex-col gap-4 mb-6 items-start justify-start p-4 md:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433] bg-white"
         whileHover={{ y: -5 }}
         variants={itemVariants}
     >

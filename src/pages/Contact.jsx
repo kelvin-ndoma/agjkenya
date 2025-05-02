@@ -1,17 +1,18 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import Hero from "../components/Hero";
+// import Map from "../components/Map";
 
 const Contact = () => {
   const contactInfo = [
     {
       title: 'phone',
-      description: '+254 700 000 000',
+      description: '+254 769 539 198',
       icon: ''
     },
     {
       title: 'email',
-      description: 'agke@serviceprovider.com',
+      description: 'info@agjkenya.com',
       icon: ''
     }
   ]
@@ -19,7 +20,7 @@ const Contact = () => {
   const busInfo = [
     {
       days: 'Monday - Friday',
-      hours: '8:00 - 17:00',
+      hours: '8:00 - 18:30',
     },
     {
       days: 'Saturday',
@@ -41,7 +42,7 @@ const Contact = () => {
           {/* form */}
           <div className="one">
             <p className="text-xl font-bold text-start py-4">
-            Let's Connect. Your Questions Answered.
+              Let's Connect. Your Questions Answered.
             </p>
             <form id="contactForm" className="space-y-8 p-4 md:p-8 bg-[#800000]/10 rounded-xl">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -172,7 +173,7 @@ const Contact = () => {
         </div>
 
         {/* map */}
-
+        {/* <Map /> */}
       </div>
     </>
   );
