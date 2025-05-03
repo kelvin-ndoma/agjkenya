@@ -112,7 +112,7 @@ const Contact = () => {
 
             {/* row a: contact info */}
             <div className="contact-info">
-              <p className="text-base font-thin text-gray-600 pb-2 md:pb-3">If you have any questions, please feel free to get in touch with us via phone, text email, the form beow, or even on social media</p>
+              <p className="text-base font-semibold text-gray-600 pb-2 md:pb-3">If you have any questions, please feel free to get in touch with us via phone, text email, the form below, or even on social media</p>
               <div className="grid grid-cols-1 gap-4">
                 <div className="space-y-2 p-4 bg-[#800000]/10 rounded-xl">
                   <p className="uppercase font-bold text-base">contact information</p>
@@ -173,7 +173,9 @@ const Contact = () => {
         </div>
 
         {/* map */}
-         <Map /> 
+        <div className="py-6">
+          <Map />
+        </div>
       </div>
     </>
   );
