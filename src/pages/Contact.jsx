@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import Hero from "../components/Hero";
-// import Map from "../components/Map";
+import Map from "../components/Map";
 
 const Contact = () => {
   const contactInfo = [
@@ -173,7 +173,7 @@ const Contact = () => {
         </div>
 
         {/* map */}
-        {/* <Map /> */}
+         <Map /> 
       </div>
     </>
   );

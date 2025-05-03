@@ -16,7 +16,7 @@ const Map = () => {
     // Add a marker
     L.marker([-1.325, 36.865])
       .addTo(map)
-      .bindPopup('Your Company Location')
+      .bindPopup('AGJ')
       .openPopup();
 
     // Cleanup on component unmount
