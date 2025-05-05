@@ -143,7 +143,7 @@ const Contact = () => {
                 </div>
                 {/* business info */}
                 <div className="space-y-2 p-4 bg-[#800000]/10 rounded-xl">
-                  <p className="uppercase font-bold text-base">business information</p>
+                  <p className="uppercase font-bold text-base">working hours</p>
                   <hr className="text-gray-500" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 

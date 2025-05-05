@@ -31,3 +31,8 @@ export const fadeIn = {
         }
     }
 };
+
+export const iconVariants = {
+  initial: { opacity: 0.8, scale: 1 },
+  hover: { opacity: 1, scale: 1.1 },  
+};

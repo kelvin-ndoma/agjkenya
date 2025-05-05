@@ -15,10 +15,12 @@ export const ThematicAreaCard = ({ join }) => {
                 {join.map((join, index) => (
                     <motion.div
                         key={index}
-                        className="flex items-center space-x-4 p-4 border-l-6 border-[#640433] rounded-2xl"
+                        className="flex flex-col items-center space-y-2 p-4 border-l-6 border-[#640433] rounded-2xl" // Changed items-start to items-center to center image
                     >
-                        {/* Image Section */}
-                        {join.icon && <img src={join.icon} alt={join.title} className="w-12 h-12" />}
+                        {/* Image Section - Moved to the top and centered */}
+                        <div className="flex justify-center w-full"> {/* Added a div to center the image */}
+                            {join.icon && <img src={join.icon} alt={join.title} className="w-12 h-12" />}
+                        </div>
 
                         {/* Text Section */}
                         <div>

@@ -2,16 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Count from '../components/Count';
 import Button from '../components/Button';
-import userAvatar from '../assets/user-avatar.jpg';
+import annete from '../assets/annete.webp';
+import benja from '../assets/benja.webp';
+import bosco from '../assets/bosco.webp';
+import molly from '../assets/molly.webp';
 import Marquee from '../components/Marquee';
 
 const Partners = () => {
 
   const images = [
-    userAvatar,
-    userAvatar,
-    userAvatar,
-    userAvatar,
+    annete,
+    benja,
+    bosco,
+    molly,
   ];
 
   return (
@@ -43,7 +46,7 @@ const Partners = () => {
                 <img
                   src={src}
                   alt={`client ${index + 1}`}
-                  className="w-12 h-12 rounded-full"
+                  className="w-12 h-12 rounded-full shadow-[2px_2px_10px_0px_rgba(100,4,81,0.8)]"
                 />
               </motion.div>
             ))}

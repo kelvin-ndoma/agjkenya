@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Link to="/" className="flex-shrink-0 flex items-center">
                         <img className="h-22 w-auto" src={logo} alt="AGJ Kenya" />
                         {/* Is this supposed to be here? */}
-                        {/* <span className="ml-2 text-xl font-semibold text-[#800000] hidden md:block">
+                        {/* <span className="ml-2 text-xl font-semibold text-[#640433] hidden md:block">
                             AGJ Kenya
                         </span> */}
                     </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
                     <div className="flex items-center md:hidden">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="p-2 rounded-md text-[#800000] hover:text-[#600000] focus:outline-none"
+                            className="p-2 rounded-md text-[#640433] hover:text-[#600000] focus:outline-none"
                             aria-label="Toggle menu"
                         >
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,8 +72,8 @@ const Navbar = () => {
                             to="/"
                             className={`px-4 py-2 rounded-md text-sm font-medium ${
                                 isActive('/') 
-                                    ? 'bg-[#800000] text-white' 
-                                    : 'text-[#800000] hover:bg-[#800000]/10'
+                                    ? 'bg-[#640433] text-white' 
+                                    : 'text-[#640433] hover:bg-[#640433]/10'
                             }`}
                         >
                             Home
@@ -89,8 +89,8 @@ const Navbar = () => {
                             <button
                                 className={`px-4 py-2 rounded-md text-sm font-medium flex items-center ${
                                     isActive('/capacity-building') || isActive('/advocacy-campaigns')
-                                        ? 'bg-[#800000] text-white'
-                                        : 'text-[#800000] hover:bg-[#800000]/10'
+                                        ? 'bg-[#640433] text-white'
+                                        : 'text-[#640433] hover:bg-[#640433]/10'
                                 }`}
                             >
                                 Our Programs
@@ -117,8 +117,8 @@ const Navbar = () => {
                                             to="/capacity-building"
                                             className={`block px-4 py-2 text-sm ${
                                                 isActive('/capacity-building')
-                                                    ? 'bg-[#800000] text-white'
-                                                    : 'text-[#800000] hover:bg-[#800000]/10'
+                                                    ? 'bg-[#640433] text-white'
+                                                    : 'text-[#640433] hover:bg-[#640433]/10'
                                             }`}
                                         >
                                             Capacity Building
@@ -127,8 +127,8 @@ const Navbar = () => {
                                             to="/advocacy-campaigns"
                                             className={`block px-4 py-2 text-sm ${
                                                 isActive('/advocacy-campaigns')
-                                                    ? 'bg-[#800000] text-white'
-                                                    : 'text-[#800000] hover:bg-[#800000]/10'
+                                                    ? 'bg-[#640433] text-white'
+                                                    : 'text-[#640433] hover:bg-[#640433]/10'
                                             }`}
                                         >
                                             Advocacy Campaigns
@@ -145,8 +145,8 @@ const Navbar = () => {
                                 to={path}
                                 className={`px-4 py-2 rounded-md text-sm font-medium ${
                                     isActive(path)
-                                        ? 'bg-[#800000] text-white'
-                                        : 'text-[#800000] hover:bg-[#800000]/10'
+                                        ? 'bg-[#640433] text-white'
+                                        : 'text-[#640433] hover:bg-[#640433]/10'
                                 }`}
                             >
                                 {path.replace('/', '').replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())}
@@ -162,7 +162,7 @@ const Navbar = () => {
                     <Link
                         to="/"
                         className={`block px-3 py-2 rounded-md text-base font-medium ${
-                            isActive('/') ? 'bg-[#800000] text-white' : 'text-[#800000] hover:bg-[#800000]/10'
+                            isActive('/') ? 'bg-[#640433] text-white' : 'text-[#640433] hover:bg-[#640433]/10'
                         }`}
                     >
                         Home
@@ -173,8 +173,8 @@ const Navbar = () => {
                             onClick={() => setIsMobileProgramsOpen(!isMobileProgramsOpen)}
                             className={`w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium ${
                                 isActive('/capacity-building') || isActive('/advocacy-campaigns')
-                                    ? 'bg-[#800000] text-white'
-                                    : 'text-[#800000] hover:bg-[#800000]/10'
+                                    ? 'bg-[#640433] text-white'
+                                    : 'text-[#640433] hover:bg-[#640433]/10'
                             }`}
                         >
                             Our Programs
@@ -200,8 +200,8 @@ const Navbar = () => {
                                     to="/capacity-building"
                                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                                         isActive('/capacity-building')
-                                            ? 'bg-[#800000] text-white'
-                                            : 'text-[#800000] hover:bg-[#800000]/10'
+                                            ? 'bg-[#640433] text-white'
+                                            : 'text-[#640433] hover:bg-[#640433]/10'
                                     }`}
                                 >
                                     Capacity Building
@@ -210,8 +210,8 @@ const Navbar = () => {
                                     to="/advocacy-campaigns"
                                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                                         isActive('/advocacy-campaigns')
-                                            ? 'bg-[#800000] text-white'
-                                            : 'text-[#800000] hover:bg-[#800000]/10'
+                                            ? 'bg-[#640433] text-white'
+                                            : 'text-[#640433] hover:bg-[#640433]/10'
                                     }`}
                                 >
                                     Advocacy Campaigns
@@ -226,8 +226,8 @@ const Navbar = () => {
                             to={path}
                             className={`block px-3 py-2 rounded-md text-base font-medium ${
                                 isActive(path)
-                                    ? 'bg-[#800000] text-white'
-                                    : 'text-[#800000] hover:bg-[#800000]/10'
+                                    ? 'bg-[#640433] text-white'
+                                    : 'text-[#640433] hover:bg-[#640433]/10'
                             }`}
                         >
                             {path.replace('/', '').replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())}

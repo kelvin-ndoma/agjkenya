@@ -17,11 +17,11 @@ const Button = ({ buttons }) => {
                         key={index}
                         href={button.href}
                         onClick={button.onClick}
-                        className={`p-4 font-semibold uppercase text-sm text-center rounded-xl 
+                        className={`p-4 font-semibold capitalize text-base text-center rounded-xl 
                             ${button.variant === "primary"
                                 ? "text-white bg-[#000000] hover:bg-white hover:text-[#000000]"
                                 : button.variant === "secondary"
-                                    ? "bg-white text-black hover:bg-[#ab0757]"
+                                    ? "bg-white text-[#640433] hover:bg-transparent hover:border-2 hover:border-white hover:text-white"
                                     : button.variant === "simple"
                                         ? "bg-transparent border-2 border-[#640433] text-black hover:bg-[#640433] hover:text-white hover:border-[#640433]"
                                         : button.variant === "elevated"
