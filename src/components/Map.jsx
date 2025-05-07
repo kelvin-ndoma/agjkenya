@@ -8,10 +8,7 @@ const Map = () => {
     const map = L.map('map').setView([-1.325, 36.865], 15); // Coordinates of Avenue Park 2, Embakasi South, Nairobi
 
     // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
     // Add a marker
     L.marker([-1.325, 36.865])

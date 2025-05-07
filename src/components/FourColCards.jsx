@@ -7,7 +7,7 @@ export const FourColCards = ({ cards }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* 4 columns on large screens (md), 1 column on small screens (default) */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         {cards.map((card, index) => (
           <motion.div
             key={index}

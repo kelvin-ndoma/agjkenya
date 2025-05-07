@@ -21,7 +21,7 @@ export const Marquee = () => {
                     animate={{ x: ['0%', '-100%'] }}
                     transition={{
                         repeat: Infinity,
-                        duration: 15,
+                        duration: 12,
                         ease: 'linear',
                     }}
                 >

@@ -3,21 +3,27 @@ import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
 // import { containerVariants, itemVariants, fadeIn } from '../components/Variants'
 import FourColCards from '../components/FourColCards';
-import annete from '../assets/annete.jpg';
-import teresia from '../assets/teresia.jpg';
-import dennis from '../assets/dennis.jpg';
-import molly from '../assets/molly.jpg';
-import bosco from '../assets/bosco.jpg';
-import martin from '../assets/martin.jpg';
-import james from '../assets/james.jpg';
-import benja from '../assets/benja.jpg';
+import annete from '../assets/annete.webp';
+import teresia from '../assets/teresia.webp';
+import dennis from '../assets/dennis.webp';
+import molly from '../assets/molly.webp';
+import bosco from '../assets/bosco.webp';
+import martin from '../assets/martin.webp';
+import james from '../assets/james.webp';
+import benja from '../assets/benja.webp';
+import peris from '../assets/peris.webp';
 
 const Team = () => {
   const employeeInfo = [
     {
       employeePic: annete,
       employeeName: 'Annette Kimeu',
-      employeeRole: 'Programs Manager',
+      employeeRole: 'Programs Assistant',
+    },
+    {
+      employeePic: dennis,
+      employeeName: 'Dennis Beru',
+      employeeRole: 'Team Lead',
     },
     {
       employeePic: teresia,
@@ -25,34 +31,34 @@ const Team = () => {
       employeeRole: 'Public Relations',
     },
     {
-      employeePic: dennis,
-      employeeName: 'Dennis Beru',
-      employeeRole: 'Chairperson',
-    },
-    {
-      employeePic: molly,
-      employeeName: 'Molly Peter’s',
-      employeeRole: 'Vice-Chairperson',
-    },
-    {
       employeePic: bosco,
       employeeName: 'Bosco Kathima',
-      employeeRole: 'National Coordinator',
+      employeeRole: 'Programs Lead',
+    },
+    {
+      employeePic: peris,
+      employeeName: 'Peris',
+      employeeRole: 'PR & Communications',
     },
     {
       employeePic: martin,
       employeeName: 'Martin Kedenge',
-      employeeRole: 'Secretary',
+      employeeRole: 'Operations Manager',
     },
     {
       employeePic: james,
       employeeName: 'James Mbulo Dolo',
-      employeeRole: 'Treasurer',
+      employeeRole: 'Project Officer',
+    },
+    {
+      employeePic: molly,
+      employeeName: 'Molly Peter’s',
+      employeeRole: 'Coordinator',
     },
     {
       employeePic: benja,
       employeeName: 'Benjamin Radonde',
-      employeeRole: 'Accountant',
+      employeeRole: 'Finance Officer',
     }
   ]
   return (
@@ -80,11 +86,12 @@ const Team = () => {
           <span className='text-gray-600 pl-2'>Partners</span>
         </p>
         <p className='text-xl md:text-2xl font-bold text-start capitalize py-4 space-y-4 text-[#640433]'>
-          <span> Collaborative excellence: Building bridges, <br/></span>
+          <span> Collaborative excellence: Building bridges, <br /></span>
           <span>driving success</span>
         </p>
-        <Marquee />
+
       </div>
+      <Marquee />
     </>
   )
 }
