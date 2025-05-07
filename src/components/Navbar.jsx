@@ -139,7 +139,7 @@ const Navbar = () => {
                         </div>
 
                         {/* Other Navigation Links */}
-                        {['/awards', '/about', '/contact', '/gallery'].map((path) => (
+                        {['/our-team', '/contact', '/gallery', '/blogs'].map((path) => (
                             <Link
                                 key={path}
                                 to={path}
@@ -220,7 +220,7 @@ const Navbar = () => {
                         )}
                     </div>
 
-                    {['/awards', '/about', '/contact', '/gallery'].map((path) => (
+                    {['/our-team', '/contact', '/gallery', '/blogs'].map((path) => (
                         <Link
                             key={path}
                             to={path}

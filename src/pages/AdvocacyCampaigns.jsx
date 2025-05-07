@@ -569,7 +569,7 @@ const AdvocacyCampaigns = () => {
           </div>
         </motion.div>
 
-        {/* Upcoming Campaigns */}
+        {/* Ongoing & Recent Campaigns */}
         <motion.div 
           className="mb-16"
           initial="hidden"
@@ -581,43 +581,106 @@ const AdvocacyCampaigns = () => {
             className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
-            Upcoming Campaigns
+            Ongoing & Recent Campaigns
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "SATO Products Activation by SATO",
-                description: "Details to be provided about this upcoming campaign."
-              },
-              {
-                title: "SRHR Campaign by AFOSI",
-                description: "Details to be provided about this important initiative."
-              },
-              {
-                title: "Breathe Nairobi by Breathe Cities",
-                description: "Details to be provided about this environmental campaign."
-              }
-            ].map((campaign, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#800000]"
-                variants={itemVariants}
-                custom={index}
-                whileHover={{ y: -5 }}
-              >
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-[#800000]/10 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
-                    {index === 0 ? "🛍️" : index === 1 ? "❤️" : "🌿"}
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">{campaign.title}</h3>
-                  <p className="text-gray-600 mb-4">{campaign.description}</p>
-                  <span className="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                    Coming Soon
-                  </span>
+            {/* SATO Products Activation */}
+            <motion.div 
+              className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#800000]"
+              variants={itemVariants}
+              whileHover={{ y: -5 }}
+            >
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-[#800000]/10 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                  🚽
                 </div>
-              </motion.div>
-            ))}
+                <h3 className="text-xl font-bold text-gray-800 mb-3">SATO Products Activation</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Empowering Communities through the Sato Engagement: A 10-Week Radio Campaign Across Kenya
+              </p>
+              <p className="text-gray-700 mb-4">
+                We are excited to announce the launch of the Sato Engagement, a dynamic 10-week media initiative designed to promote improved sanitation and hygiene practices in Kenyan communities. This campaign is being implemented across five radio stations strategically located in different counties to ensure wide reach and local impact.
+              </p>
+              <div className="bg-[#640433]/10 p-4 rounded-lg mb-4">
+                <h4 className="font-bold text-[#640433] mb-2">Participating Stations:</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Lulu FM – Mombasa County</li>
+                  <li>• Mwanedu FM – Taita Taveta County</li>
+                  <li>• Ekialo Kiona – Homa Bay County</li>
+                  <li>• Gospo FM – Narok County</li>
+                  <li>• Radio Injili – Kericho County</li>
+                </ul>
+              </div>
+              <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                Ongoing
+              </span>
+            </motion.div>
+
+            {/* SRHR Campaign by AFOSI */}
+            <motion.div 
+              className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#800000]"
+              variants={itemVariants}
+              whileHover={{ y: -5 }}
+            >
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-[#800000]/10 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                  ❤️
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">SRHR Campaign by AFOSI</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Amplifying Voices on SRHR: A Community Radio Engagement with AFOSI
+              </p>
+              <p className="text-gray-700 mb-4">
+                We are proud to partner with Action for Sustainability Initiative (AFOSI) to roll out a vital Sexual and Reproductive Health and Rights (SRHR) awareness campaign across five community radio stations in Nairobi.
+              </p>
+              <div className="bg-[#640433]/10 p-4 rounded-lg mb-4">
+                <h4 className="font-bold text-[#640433] mb-2">Participating Stations:</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Ghetto FM – Majengo</li>
+                  <li>• Ruben FM – Mukuru Slums</li>
+                  <li>• Pamoja FM – Kibra Slums</li>
+                  <li>• Koch FM – Korogocho</li>
+                  <li>• Radio Domus – Ngong Area</li>
+                </ul>
+              </div>
+              <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                Ongoing
+              </span>
+            </motion.div>
+
+            {/* Breathe Nairobi */}
+            <motion.div 
+              className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#800000]"
+              variants={itemVariants}
+              whileHover={{ y: -5 }}
+            >
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-[#800000]/10 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                  🌿
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Breathe Nairobi</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Community Voices Drive the Breathe Nairobi Initiative
+              </p>
+              <p className="text-gray-700 mb-4">
+                In partnership with The Nairobi County Government, Muungano wa Wanavijiji, Climate and Clean Air Coalition, Clean Air Fund and National Public Transport Alliance, AGJK conducted a media campaign under the Breathe Nairobi Initiative.
+              </p>
+              <div className="bg-[#640433]/10 p-4 rounded-lg mb-4">
+                <h4 className="font-bold text-[#640433] mb-2">Campaign Highlights:</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Daily Presenter Mentions & Radio Spots</li>
+                  <li>• Interactive Talk Shows with community participation</li>
+                  <li>• Social Media Integration for wider reach</li>
+                </ul>
+              </div>
+              <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                Completed
+              </span>
+            </motion.div>
           </div>
         </motion.div>
       </div>

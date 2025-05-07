@@ -9,12 +9,13 @@ import Programs from './pages/Programs'
 import Blogs from './pages/Blogs'
 import AdvocacyCampaigns from './pages/AdvocacyCampaigns'
 import CapacityBuilding from './pages/CapacityBuilding'
+import Team from './pages/About'
 
 const AppRouter = () => {
   return (
     <Routes>
         <Route path='/' element = {<Home/>}/>
-        <Route path='/about' element = {<About/>}/>
+        <Route path='/our-team' element = {<Team/>}/>
         <Route path='/awards' element = {<Awards/>}/>
         <Route path='/gallery' element = {<Gallery/>}/>
         <Route path='/programs' element = {<Programs/>}/>

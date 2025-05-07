@@ -12,7 +12,7 @@ import martin from '../assets/martin.jpg';
 import james from '../assets/james.jpg';
 import benja from '../assets/benja.jpg';
 
-const About = () => {
+const Team = () => {
   const employeeInfo = [
     {
       employeePic: annete,
@@ -89,4 +89,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Team;

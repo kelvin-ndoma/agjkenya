@@ -5,7 +5,11 @@ import conferenceImg from '../assets/mic.jpg';
 import awardsImg from '../assets/mic.jpg';
 import trainingImg from '../assets/mic.jpg';
 import networkingImg from '../assets/mic.jpg';
+import mic from '../assets/mic.jpg';
 
+
+
+const externalGalleryUrl = "https://agjk83.pixieset.com/associationofgrassrootjournalistsofkenyaagjkconference/highlights/"
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -34,7 +38,7 @@ const fadeIn = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { 
+    transition: {
       duration: 0.8,
       ease: "easeOut"
     }
@@ -45,7 +49,7 @@ const CapacityBuilding = () => {
   return (
     <div className="w-full bg-gray-50">
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         className="w-full bg-gradient-to-br from-[#640433] to-[#420218] py-24 md:py-32 relative overflow-hidden"
         initial="hidden"
         animate="visible"
@@ -57,7 +61,7 @@ const CapacityBuilding = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Capacity <span className="text-yellow-200">Building</span>
             </h1>
-            <motion.p 
+            <motion.p
               className="text-xl text-white/90 max-w-3xl mx-auto"
               variants={fadeIn}
             >
@@ -70,28 +74,28 @@ const CapacityBuilding = () => {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Mentorship Program */}
-        <motion.div 
+        <motion.div
           className="mb-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
         >
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Mentorship Program
           </motion.h2>
-          
+
           {/* Image Card */}
-          <motion.div 
+          <motion.div
             className="bg-white rounded-xl shadow-lg overflow-hidden mb-8"
             variants={itemVariants}
           >
             <div className="relative h-64 md:h-80">
-              <img 
-                src={mentorshipImg} 
+              <img
+                src={mentorshipImg}
                 alt="Journalists in mentorship session"
                 className="w-full h-full object-cover"
               />
@@ -116,7 +120,7 @@ const CapacityBuilding = () => {
           {/* Content Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Program Focus */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
@@ -147,7 +151,7 @@ const CapacityBuilding = () => {
             </motion.div>
 
             {/* Program Details */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
@@ -169,28 +173,28 @@ const CapacityBuilding = () => {
         </motion.div>
 
         {/* Media Conference */}
-        <motion.div 
+        <motion.div
           className="mb-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
         >
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Community Media Conference
           </motion.h2>
-          
+
           {/* Image Card */}
-          <motion.div 
+          <motion.div
             className="bg-white rounded-xl shadow-lg overflow-hidden mb-8"
             variants={itemVariants}
           >
             <div className="relative h-64 md:h-80">
-              <img 
-                src={conferenceImg} 
+              <img
+                src={conferenceImg}
                 alt="Media conference attendees"
                 className="w-full h-full object-cover"
               />
@@ -215,7 +219,7 @@ const CapacityBuilding = () => {
           {/* Content Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Conference Highlights */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
@@ -246,7 +250,7 @@ const CapacityBuilding = () => {
             </motion.div>
 
             {/* Partner Organizations */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
@@ -274,7 +278,7 @@ const CapacityBuilding = () => {
             </motion.div>
 
             {/* Conference Outcomes */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433] md:col-span-2"
               variants={itemVariants}
             >
@@ -294,32 +298,33 @@ const CapacityBuilding = () => {
                 </li>
               </ul>
             </motion.div>
+            
           </div>
         </motion.div>
 
         {/* Journalism Awards */}
-        <motion.div 
+        <motion.div
           className="mb-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
         >
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Community Journalism Awards
           </motion.h2>
-          
+
           {/* Image Card */}
-          <motion.div 
+          <motion.div
             className="bg-white rounded-xl shadow-lg overflow-hidden mb-8"
             variants={itemVariants}
           >
             <div className="relative h-64 md:h-80">
-              <img 
-                src={awardsImg} 
+              <img
+                src={awardsImg}
                 alt="Journalism awards ceremony"
                 className="w-full h-full object-cover"
               />
@@ -344,7 +349,7 @@ const CapacityBuilding = () => {
           {/* Content Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Award Categories */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
@@ -357,25 +362,45 @@ const CapacityBuilding = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-[#640433] mr-2 mt-1">•</span>
-                  <span><strong>Health Reporting</strong> – Excellence in SRHR and public health journalism</span>
+                  <span>Health Reporting</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#640433] mr-2 mt-1">•</span>
-                  <span><strong>Environmental Reporting</strong> – Outstanding coverage of climate and environmental issues</span>
+                  <span>Investigative Reporting</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#640433] mr-2 mt-1">•</span>
-                  <span><strong>Gender Equality Reporting</strong> – Stories promoting gender equity</span>
+                  <span>Environment And Climate Change Reporting</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#640433] mr-2 mt-1">•</span>
-                  <span><strong>Community Impact Story</strong> – Journalism that drives positive change</span>
+                  <span>Governance And Advocacy</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
+                  <span>Technology Innovations And Business Reporting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
+                  <span>Gender Reporting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
+                  <span>Sports And Culture Reporting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
+                  <span>Humanitarian Reporting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#640433] mr-2 mt-1">•</span>
+                  <span>Children Reporting</span>
                 </li>
               </ul>
             </motion.div>
 
             {/* Award Impact */}
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433]"
               variants={itemVariants}
             >
@@ -385,12 +410,119 @@ const CapacityBuilding = () => {
               </p>
               <h3 className="text-xl font-bold text-[#640433] mb-4 mt-6">2024 Highlights</h3>
               <p className="text-gray-700">
-                The 2024 awards ceremony was held in Nairobi, with winners selected from over 200 submissions. Winning stories addressed critical issues including maternal health, climate adaptation, and gender-based violence.
+                The 2024 awards ceremony was held in Mombasa, with winners selected from over 399 submissions. Winning stories addressed critical issues including maternal health, climate adaptation, and gender-based violence.
               </p>
+              <div className="mt-10">
+                <a
+                  href={externalGalleryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block group"
+                >
+                  <button className="relative overflow-hidden bg-gradient-to-r from-[#7a053d] to-[#640433] text-white px-6 py-3 rounded-lg hover:to-[#7a053d] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    <span className="relative z-10 flex items-center">
+                      See Highlights
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-[#8a0745] to-[#7a053d] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></span>
+                  </button>
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Awards Highlights Carousel */}
+            <motion.div
+              className="md:col-span-2"
+              variants={itemVariants}
+            >
+              <h3 className="text-2xl font-bold text-[#640433] mb-6 text-center">Awards Highlights Gallery</h3>
+              <div className="relative w-full overflow-hidden">
+                <div className="flex space-x-4 py-4 overflow-x-auto snap-x snap-mandatory scroll-smooth">
+                  {/* Replace these image sources with your actual award highlight images */}
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 1"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 2"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 3"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 4"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 5"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 6"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 7"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 8"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 9"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-80 h-64 snap-center">
+                    <img
+                      src={mic}
+                      alt="Award ceremony highlight 10"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
             {/* Join Conversation */}
-            <motion.div 
+            <motion.div
               className="bg-gradient-to-r from-[#640433] to-[#420218] p-6 rounded-xl shadow-lg md:col-span-2"
               variants={itemVariants}
             >
@@ -411,20 +543,20 @@ const CapacityBuilding = () => {
         </motion.div>
 
         {/* Training Gallery */}
-        <motion.div 
+        <motion.div
           className="mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
             variants={itemVariants}
           >
             Training Gallery
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
@@ -443,7 +575,7 @@ const CapacityBuilding = () => {
                 description: "Engaging conversations on media topics"
               }
             ].map((item, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433]"
                 variants={itemVariants}
@@ -451,8 +583,8 @@ const CapacityBuilding = () => {
                 whileHover={{ y: -5 }}
               >
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <img 
-                    src={item.image} 
+                  <img
+                    src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover"
                   />
@@ -465,7 +597,7 @@ const CapacityBuilding = () => {
         </motion.div>
 
         {/* CTA Section */}
-        <motion.section 
+        <motion.section
           className="text-center bg-[#640433] rounded-2xl py-16 px-6 text-white"
           initial="hidden"
           whileInView="visible"
@@ -479,7 +611,7 @@ const CapacityBuilding = () => {
             Join our programs and become part of a growing network of community journalists.
           </p>
           <div className="mt-8">
-            <motion.button 
+            <motion.button
               className="px-8 py-4 border-2 border-white text-base font-medium rounded-md text-[#640433] bg-white hover:bg-transparent hover:text-white transition-colors md:py-4 md:text-lg md:px-10"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
