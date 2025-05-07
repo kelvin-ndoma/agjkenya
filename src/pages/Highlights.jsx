@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { galleryImages, focusAreas } from "../assets/data";
 
-const AwardsPage = () => {
+const HighlightsPage = () => {
   // Key Objectives Data
   const objectives = [
     {
@@ -45,55 +45,13 @@ const AwardsPage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="bg-[#640433] text-white py-24 px-4 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">AGJK Community Journalism Awards 2024</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Highlights 2024</h1>
         <p className="text-xl md:text-2xl max-w-4xl mx-auto">
           Celebrating Excellence in Community Journalism
         </p>
       </div>
 
-      {/* Awards Excellence & Categories */}
-      <div className="container mx-auto py-20 px-4">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Awards Excellence */}
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#640433] mb-6">Award Excellence</h2>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              The conference will culminate with the third edition of the AGJK Community Journalism Awards 2024, 
-              a Gala Event to honor and celebrate the dedication and impact of community journalists. These awards 
-              recognize outstanding contributions of journalists committed to serving their local communities through 
-              insightful reporting, meaningful storytelling, and advocacy for positive change.
-            </p>
-          </div>
-          
-          {/* Categories */}
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#640433] mb-8">Categories</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                "Health Reporting",
-                "Investigative Reporting",
-                "Environment And Climate Change Reporting",
-                "Governance And Advocacy",
-                "Technology Innovations And Business Reporting",
-                "Gender Reporting",
-                "Sports And Culture Reporting",
-                "Humanitarian Reporting",
-                "Children Reporting"
-              ].map((category, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="bg-[#640433] text-white p-2 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="font-medium text-gray-800">{category}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       {/* Areas of Focus */}
       <div className="bg-[#f8f4f4] py-20 px-4">
         <div className="container mx-auto">
@@ -132,10 +90,10 @@ const AwardsPage = () => {
         </div>
       </div>
 
-      {/* Awards Gallery */}
+      {/* Gallery */}
       <div className="bg-gray-100 py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-[#640433] mb-12 text-center">Awards Gallery</h2>
+          <h2 className="text-3xl font-bold text-[#640433] mb-12 text-center">Gallery</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
             {displayedImages.map((image) => (
@@ -196,9 +154,8 @@ const AwardsPage = () => {
           </div>
         </div>
       </div>
-
-         </div>
+    </div>
   );
 };
 
-export default AwardsPage;
+export default HighlightsPage;

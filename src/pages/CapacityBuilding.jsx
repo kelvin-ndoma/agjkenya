@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import mentorshipImg from '../assets/mic.jpg';
 import conferenceImg from '../assets/mic.jpg';
@@ -282,23 +283,37 @@ const CapacityBuilding = () => {
               className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#640433] md:col-span-2"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-bold text-[#640433] mb-4">Conference Outcomes</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="text-[#640433] mr-2">→</span>
-                  <span>Strengthened networks among community journalists across Kenya</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#640433] mr-2">→</span>
-                  <span>Development of a community media charter outlining best practices</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#640433] mr-2">→</span>
-                  <span>Commitments from partners to support grassroots journalism initiatives</span>
-                </li>
-              </ul>
+              <div className="flex flex-col md:flex-row md:items-start gap-6">
+                {/* Content Section */}
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-[#640433] mb-4">Conference Outcomes</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <span className="text-[#640433] mr-2">→</span>
+                      <span>Strengthened networks among community journalists across Kenya</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#640433] mr-2">→</span>
+                      <span>Development of a community media charter outlining best practices</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#640433] mr-2">→</span>
+                      <span>Commitments from partners to support grassroots journalism initiatives</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Button Section - Aligned to the right */}
+                <div className="md:self-center">
+                  <Link
+                    to="/highlights"
+                    className="inline-block bg-[#640433] hover:bg-[#8a0550] text-white font-bold py-3 px-10 rounded-xl shadow-md transition-colors duration-300 whitespace-nowrap"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </div>
             </motion.div>
-            
           </div>
         </motion.div>
 

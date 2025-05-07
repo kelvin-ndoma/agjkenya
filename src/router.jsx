@@ -1,8 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About'
-import Awards from './pages/Awards'
+import Awards from './pages/Highlights'
 import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
 import Programs from './pages/Programs'
@@ -16,7 +15,7 @@ const AppRouter = () => {
     <Routes>
         <Route path='/' element = {<Home/>}/>
         <Route path='/our-team' element = {<Team/>}/>
-        <Route path='/awards' element = {<Awards/>}/>
+        <Route path='/highlights' element = {<Awards/>}/>
         <Route path='/gallery' element = {<Gallery/>}/>
         <Route path='/programs' element = {<Programs/>}/>
         <Route path='/contact' element = {<Contact/>}/>
