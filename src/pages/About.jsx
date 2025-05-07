@@ -11,13 +11,19 @@ import bosco from '../assets/bosco.webp';
 import martin from '../assets/martin.webp';
 import james from '../assets/james.webp';
 import benja from '../assets/benja.webp';
+import peris from '../assets/peris.webp';
 
 const About = () => {
   const employeeInfo = [
     {
       employeePic: annete,
       employeeName: 'Annette Kimeu',
-      employeeRole: 'Programs Manager',
+      employeeRole: 'Programs Assistant',
+    },
+    {
+      employeePic: dennis,
+      employeeName: 'Dennis Beru',
+      employeeRole: 'Team Lead',
     },
     {
       employeePic: teresia,
@@ -25,34 +31,34 @@ const About = () => {
       employeeRole: 'Public Relations',
     },
     {
-      employeePic: dennis,
-      employeeName: 'Dennis Beru',
-      employeeRole: 'Chairperson',
-    },
-    {
-      employeePic: molly,
-      employeeName: 'Molly Peter’s',
-      employeeRole: 'Vice-Chairperson',
-    },
-    {
       employeePic: bosco,
       employeeName: 'Bosco Kathima',
-      employeeRole: 'National Coordinator',
+      employeeRole: 'Programs Lead',
+    },
+    {
+      employeePic: peris,
+      employeeName: 'Peris',
+      employeeRole: 'PR & Communications',
     },
     {
       employeePic: martin,
       employeeName: 'Martin Kedenge',
-      employeeRole: 'Secretary',
+      employeeRole: 'Operations Manager',
     },
     {
       employeePic: james,
       employeeName: 'James Mbulo Dolo',
-      employeeRole: 'Treasurer',
+      employeeRole: 'Project Officer',
+    },
+    {
+      employeePic: molly,
+      employeeName: 'Molly Peter’s',
+      employeeRole: 'Coordinator',
     },
     {
       employeePic: benja,
       employeeName: 'Benjamin Radonde',
-      employeeRole: 'Accountant',
+      employeeRole: 'Finance Officer',
     }
   ]
   return (
