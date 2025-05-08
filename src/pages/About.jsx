@@ -13,27 +13,12 @@ import james from '../assets/james.webp';
 import benja from '../assets/benja.webp';
 import peris from '../assets/peris.webp';
 
-const Team = () => {
+const About = () => {
   const employeeInfo = [
     {
-      employeePic: annete,
-      employeeName: 'Annette Kimeu',
-      employeeRole: 'Programs Assistant',
-    },
-    {
-      employeePic: dennis,
-      employeeName: 'Dennis Beru',
-      employeeRole: 'Team Lead',
-    },
-    {
-      employeePic: teresia,
-      employeeName: 'Teresia Aluoch',
-      employeeRole: 'Public Relations',
-    },
-    {
-      employeePic: bosco,
-      employeeName: 'Bosco Kathima',
-      employeeRole: 'Programs Lead',
+      employeePic: martin,
+      employeeName: 'Martin Kedenge',
+      employeeRole: 'Operations Manager',
     },
     {
       employeePic: peris,
@@ -41,14 +26,24 @@ const Team = () => {
       employeeRole: 'PR & Communications',
     },
     {
-      employeePic: martin,
-      employeeName: 'Martin Kedenge',
-      employeeRole: 'Operations Manager',
+      employeePic: dennis,
+      employeeName: 'Dennis Beru',
+      employeeRole: 'Team Lead',
     },
     {
-      employeePic: james,
-      employeeName: 'James Mbulo Dolo',
-      employeeRole: 'Project Officer',
+      employeePic: bosco,
+      employeeName: 'Bosco Kathima',
+      employeeRole: 'Programs Lead',
+    },
+    {
+      employeePic: benja,
+      employeeName: 'Benjamin Radonde',
+      employeeRole: 'Finance Officer',
+    },
+    {
+      employeePic: annete,
+      employeeName: 'Annette Kimeu',
+      employeeRole: 'Programs Assistant',
     },
     {
       employeePic: molly,
@@ -56,13 +51,13 @@ const Team = () => {
       employeeRole: 'Coordinator',
     },
     {
-      employeePic: benja,
-      employeeName: 'Benjamin Radonde',
-      employeeRole: 'Finance Officer',
-    }
+      employeePic: james,
+      employeeName: 'James Mbulo Dolo',
+      employeeRole: 'Project Officer',
+    },
   ]
   return (
-    <>
+    <div className="overflow-hidden">
       <Hero
         title="About"
         titleExt="Us"
@@ -92,8 +87,8 @@ const Team = () => {
 
       </div>
       <Marquee />
-    </>
+    </div>
   )
 }
 
-export default Team;
+export default About;

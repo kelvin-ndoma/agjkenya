@@ -8,8 +8,7 @@ import mic from '../assets/mic-2.png';
 import { Testimonials } from './Testimonials';
 import Partners from '../components/Partners';
 // Data impors
-import { textContent, interventionData } from '../components/constants'
-import Interventions from '../components/Interventions';
+import { textContent } from '../components/constants'
 
 // home svg elements
 const FirstSVG = ({ fill, size }) => (
@@ -39,10 +38,6 @@ const ThirdSVG = ({ fill, size }) => (
 );
 
 export default function Home() {
-  // const textContent = [
-  //   'The Association of Grassroot Journalists Kenya (AGJK) strives to promote the flow of information and seeks to inspire successive generations of talented individuals to become dedicated journalists.',
-  //   'AGJK upholds professionalism by supporting accurate and reliable reporting through various initiatives for community media nationwide.',
-  // ];
 
   const cardInfo = [
     {
@@ -89,16 +84,6 @@ export default function Home() {
       {/* partners section */}
       <Partners />
 
-      {/* Interventions */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
-          variants={itemVariants}
-        >
-          Our Interventions
-        </motion.h2>
-        <Interventions interventions={interventionData} />
-      </div>
       {/* Registered */}
       <Testimonials />
 

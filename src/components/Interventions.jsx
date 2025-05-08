@@ -1,74 +1,49 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { motion } from 'framer-motion';
-import { itemVariants, containerVariants } from './Variants'
+import { motion } from "framer-motion";
+import { containerVariants } from "./Variants";
 
 export const Interventions = ({ interventions }) => {
-    return (
-        <>
-            {interventions.map((intervention, index) => (
-                // Meeh...........Change card design
-                <motion.div
-                    className="mb-24 overflow-hidden"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
-                    variants={containerVariants}
-                    key={index}
-                >
-                    {/* Image Card */}
-                    <motion.div
-                        className="bg-white rounded-xl shadow-lg overflow-hidden mb-8"
-                        variants={itemVariants}
-                    >
-                        <div className="relative h-32 md:h-64">
-                            {/* <img
-                                src={intervention.background}
-                                alt="Tukisonga campaign participants"
-                                className="w-full h-full object-cover"
-                            /> */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#000000]/90 to-transparent flex items-end p-6 justify-between">
-                                <div className="flex-grow">
-                                    <span className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-2">
-                                        {intervention.title}
-                                    </span>
-                                    <h3 className="text-2xl font-bold text-white">
-                                        {intervention.header}
-                                    </h3>
-                                </div>
-                                <div className="flex-shrink-0 bg-white rounded-full">
-                                    {intervention.icon && (
-                                        <img
-                                            src={intervention.icon}
-                                            alt="Intervention Icon"
-                                            className="rounded-full h-16 w-16 md:w-32 md:h-32 object-cover"
-                                        />
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="p-6">
-                            <p className="text-gray-700 mb-4">
-                                {intervention.description}</p>
-                        </div>
-                    </motion.div>
-                </motion.div>
-            ))}
-        </>
-    )
-}
-
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {interventions.map((intervention, index) => (
+        <motion.div
+          key={index}
+          className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433]"
+          initial="hidden"
+          whileInView="visible"
+          whileHover={{ y: -5 }}
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+        >
+          <div className="text-center">
+            <div className="w-16 h-16 bg-[#640433]/10 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+              {index === 0 ? "📘" : index === 1 ? "🌟" : "🌍"}
+            </div>
+            <h3 className="text-xl font-bold text-gray-800 mb-3">
+              {intervention.header}
+            </h3>
+            <p className="text-gray-600 mb-4 text-sm">{intervention.description}</p>
+            <span className="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+              {intervention.title}
+            </span>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
+};
+// 🔏🤖🕊️
 // Props
 Interventions.propTypes = {
-    interventions: PropTypes.arrayOf(
-        PropTypes.shape({
-            // background: PropTypes.string,
-            icon: PropTypes.string,
-            title: PropTypes.string,
-            header: PropTypes.string,
-            description: PropTypes.string,
-        })
-    ).isRequired,
+  interventions: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.string,
+      title: PropTypes.string,
+      header: PropTypes.string,
+      description: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Interventions;

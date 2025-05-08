@@ -7,7 +7,9 @@ import ad from '../assets/ad.svg';
 import cap from '../assets/cap.svg'
 import TestimonialCard from '../components/TestimonialsCard';
 import { ThematicAreaCard } from '../components/ThematicAreaCard';
-
+import Interventions from '../components/Interventions';
+import { interventionData } from '../components/constants';
+import { itemVariants } from '../components/Variants';
 export const Testimonials = () => {
     // thematic focus
     const thematicAreaData = [
@@ -51,7 +53,16 @@ export const Testimonials = () => {
                 join={thematicAreaData}
             />
             {/* Testimonials */}
-
+            {/* Interventions */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <motion.h2
+                    className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
+                    variants={itemVariants}
+                >
+                    Our Interventions
+                </motion.h2>
+                <Interventions interventions={interventionData} />
+            </div>
             {/* What people say? */}
             <motion.div className="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white text-center rounded-2xl">
                 <p className="text-2xl md:text-4xl font-bold text-[#640433] mb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-8">What people say?</p>

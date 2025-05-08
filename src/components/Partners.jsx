@@ -7,6 +7,7 @@ import benja from '../assets/benja.webp';
 import bosco from '../assets/bosco.webp';
 import molly from '../assets/molly.webp';
 import Marquee from '../components/Marquee';
+import prescence from '../assets/prescence.svg'
 
 const Partners = () => {
 
@@ -29,9 +30,9 @@ const Partners = () => {
           </p>
         </div>
         {/* Second column with images and text below */}
+        {/* Images section */}
         <div className="flex flex-col items-start space-y-4">
-          {/* Images section */}
-          <div className="relative w-40 h-16 flex justify-start items-start">
+          {/* <div className="relative w-40 h-16 flex justify-start items-start">
             {images.map((src, index) => (
               <motion.div
                 key={index}
@@ -50,14 +51,14 @@ const Partners = () => {
                 />
               </motion.div>
             ))}
-          </div>
-
+          </div> */}
+          <img className='w-auto h-full img-fluid flex justify-start items-start' src={prescence} alt="presence" />
           {/* Paragraph below images */}
-          <p className='text-start'>Don't just take our word for it - hear from people who've transformed their lives through AGJK</p>
+          {/* <p className='text-start'>Don't just take our word for it - hear from people who've transformed their lives through AGJK</p>
           <div className="buttons flex flex-row gap-4 py-2">
             <Button buttons={[{ href: "/", label: "Start today", variant: "elevated" }]} />
             <Button buttons={[{ href: "/", label: "Read success stories", variant: "simple" }]} />
-          </div>
+          </div> */}
         </div>
       </div>
 
