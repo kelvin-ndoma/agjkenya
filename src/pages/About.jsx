@@ -1,9 +1,6 @@
-import React from 'react'
 import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
-import FourColCards from '../components/FourColCards';
 import annete from '../assets/annete.webp';
-import teresia from '../assets/teresia.webp';
 import dennis from '../assets/dennis.webp';
 import molly from '../assets/molly.webp';
 import bosco from '../assets/bosco.webp';
@@ -11,9 +8,15 @@ import martin from '../assets/martin.webp';
 import james from '../assets/james.webp';
 import benja from '../assets/benja.webp';
 import peris from '../assets/peris.webp';
+import kioko from '../assets/Dennis.jpg'
 
 const About = () => {
   const employeeInfo = [
+      {
+      employeePic: kioko,
+      employeeName: 'Dennis Kioko',
+      employeeRole: 'Board Chair',
+    },
     {
       employeePic: martin,
       employeeName: 'Martin Kedenge',
@@ -66,6 +69,24 @@ const About = () => {
         bgColorTo="#600000"
       />
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16'>
+        {/* Mission Section */}
+        <div className="mb-16">
+          <div className="space-y-4 text-gray-700">
+            <p>
+              AGJK seeks to promote media viability across community media in Kenya thus creating an engaged citizenry well informed with issues affecting them directly and indirectly. This contribution is made through capacity building for skill development to community, citizen and school journalists, advocacy, highlighting leadership and governance while building vital networks for strong partnerships to realize media viability in the field of community media.
+            </p>
+            <p>
+              AGJK recognizes that there are many community media journalists spread out across community radio stations, television stations, freelancers, bloggers and media practitioners who are dedicated to upholding the highest professional standards in their journalistic work, producing and disseminating factual and relevant information to the Kenyan masses through different community-based platforms.
+            </p>
+            <p>
+              The Community media landscape in Kenya operates in a diverse media environment facing complex challenges with regards to sustainability and viability including persisting financial constraints. Community media outlets have however braced the challenges and continued producing objective and relevant content for different target audiences in Kenya.
+            </p>
+            <p>
+              With access to information critical during the pandemic times and the Kenyan general elections, community media outlets filled the information void by broadcasting timely information to keep communities healthy and to enhance civic education to the general Kenyan citizenry.
+            </p>
+          </div>
+        </div>
+
         <p className='text-xl md:text-3xl font-bold text-start'>
           <span className=''>The faces of</span>
           <span className='text-gray-600 pl-2'>Innovation</span>

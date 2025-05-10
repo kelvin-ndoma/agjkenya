@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link
 import { textContent } from '../components/constants'
 import Button from './Button';
 
 function HeroSection() {
   return (
     <div className="bg-custom-image bg-cover bg-center text-white py-10 md:py-20"
-                style={{
-                backgroundColor: "rgba(49, 2, 25, 1)",
-                backgroundBlendMode: "overlay",
-            }}>
+      style={{
+        backgroundColor: "rgba(49, 2, 25, 1)",
+        backgroundBlendMode: "overlay",
+      }}>
       <header className="container mx-auto px-4 flex justify-between items-center">
 
         <div className="md:hidden">
@@ -33,11 +34,14 @@ function HeroSection() {
         <div className="md:w-1/2 lg:w-5/12 text-center md:text-left">
 
           <p className="text-xl text-white/90 leading-relaxed mb-8">
-         {textContent}
+            {textContent}
           </p>
-                    <div className="flex justify-start items-start">
-                        <Button buttons={[{ href: "/about", label: "read more", variant: "primary" }]} />
-                    </div>
+          <div className="flex justify-start items-start">
+            {/* Use Link instead of href */}
+            <Link to="/our-team">
+              <Button buttons={[{ label: "read more", variant: "primary" }]} />
+            </Link>
+          </div>
         </div>
         <div className="md:w-1/2 lg:w-7/12 flex justify-center mt-10 md:mt-0">
           <div className="relative w-80 h-60 md:w-96 md:h-72">
