@@ -8,7 +8,7 @@ function Pdf() {
         <embed
           src="/documents/radios.pdf"
           type="application/pdf"
-          className="w-full h-[400px]" // Adjusted height for better viewing
+          className="w-full h-[400px]"  
         />
       </div>
     </div>

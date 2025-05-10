@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ContentSection from '../components/ContentSection';
+import HeroSection from '../components/HeroSection';
 import Cards from '../components/Cards';
 import Button from '../components/Button';
 import { itemVariants } from '../components/Variants';
@@ -60,12 +61,12 @@ export default function Home() {
   return (
     // max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16
     <div className="home">
-      <ContentSection
-        // title="Background"
+      {/* <ContentSection
         text={textContent}
         imageSrc={mic}
         imageAlt="AGJ Kenya"
-      />
+      /> */}
+      <HeroSection />
       <Cards cards={cardInfo} iconSize={48} />
       {/* Join */}
       <motion.div className="flex flex-col items-center justify-center bg-[#640433] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white text-center rounded-2xl"
