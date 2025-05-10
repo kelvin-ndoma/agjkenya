@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
-// import { containerVariants, itemVariants, fadeIn } from '../components/Variants'
 import FourColCards from '../components/FourColCards';
 import annete from '../assets/annete.webp';
 import teresia from '../assets/teresia.webp';
@@ -47,7 +46,7 @@ const About = () => {
     },
     {
       employeePic: molly,
-      employeeName: 'Molly Peter’s',
+      employeeName: 'Molly Peter\'s',
       employeeRole: 'Coordinator',
     },
     {
@@ -56,6 +55,7 @@ const About = () => {
       employeeRole: 'Project Officer',
     },
   ]
+  
   return (
     <div className="overflow-hidden">
       <Hero
@@ -70,21 +70,37 @@ const About = () => {
           <span className=''>The faces of</span>
           <span className='text-gray-600 pl-2'>Innovation</span>
         </p>
-        <p className='font-thin'>Every one of our team members is dedicated and passionate in sieng AGJK achieve its mission​</p>
+        <p className='font-thin'>Every one of our team members is dedicated and passionate in seeing AGJK achieve its mission​</p>
 
         {/* team */}
-        <FourColCards cards={employeeInfo} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
+          {employeeInfo.map((employee, index) => (
+            <div key={index} className="flex flex-col items-center text-center group">
+              <div className="relative w-48 h-48 mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <img 
+                  src={employee.employeePic} 
+                  alt={employee.employeeName}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-800">{employee.employeeName}</h3>
+              <p className="text-gray-600">{employee.employeeRole}</p>
+            </div>
+          ))}
+        </div>
 
         {/* partners */}
-        <p className='text-xl md:text-3xl font-bold text-start'>
-          <span className=''>Our</span>
-          <span className='text-gray-600 pl-2'>Partners</span>
-        </p>
-        <p className='text-xl md:text-2xl font-bold text-start capitalize py-4 space-y-4 text-[#640433]'>
-          <span> Collaborative excellence: Building bridges, <br /></span>
-          <span>driving success</span>
-        </p>
-
+        <div className="mt-20">
+          <p className='text-xl md:text-3xl font-bold text-start'>
+            <span className=''>Our</span>
+            <span className='text-gray-600 pl-2'>Partners</span>
+          </p>
+          <p className='text-xl md:text-2xl font-bold text-start capitalize py-4 space-y-4 text-[#640433]'>
+            <span> Collaborative excellence: Building bridges, <br /></span>
+            <span>driving success</span>
+          </p>
+        </div>
       </div>
       <Marquee />
     </div>

@@ -1,12 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import mentorshipImg from '../assets/mic.jpg';
+import community from '../gallery/community.jpg';
 import conferenceImg from '../assets/mic.jpg';
-import awardsImg from '../assets/mic.jpg';
+import Awards from '../gallery/Awards.jpg';
 import trainingImg from '../assets/mic.jpg';
 import networkingImg from '../assets/mic.jpg';
-import mic from '../assets/mic.jpg';
+import Media from '../gallery/media.jpg'
+import Highlight1 from '../gallery/Highlight1.jpg'
+import Highlight2 from '../gallery/Highlight2.jpg'
+import Highlight3 from '../gallery/Highlight3.jpg'
+import Highlight4 from '../gallery/Highlight4.jpg'
+import Highlight5 from '../gallery/Highlight5.jpg'
+import Highlight6 from '../gallery/Highlight6.jpg'
+import Highlight7 from '../gallery/Highlight7.jpg'
+import Highlight8 from '../gallery/Highlight8.jpg'
+import Highlight9 from '../gallery/Highlight9.jpg'
+import Highlight10 from '../gallery/Highlight10.jpg'
+
+
+
 
 
 
@@ -94,23 +107,24 @@ const CapacityBuilding = () => {
             className="bg-white rounded-xl shadow-lg overflow-hidden mb-8"
             variants={itemVariants}
           >
-            <div className="relative h-64 md:h-80">
-              <img
-                src={mentorshipImg}
-                alt="Journalists in mentorship session"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <div>
-                  <span className="inline-block bg-yellow-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-2">
-                    Active Program
-                  </span>
-                  <h3 className="text-2xl font-bold text-white">
-                    AGJK Mentorship Program 2025
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <div className="relative w-full aspect-video max-h-[400px]">
+  <img
+    src={community}
+    alt="Journalists in mentorship session"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 md:p-6">
+    <div className="w-full max-w-4xl mx-auto">
+      <span className="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-xs md:text-sm font-bold mb-2">
+        Active Program
+      </span>
+      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
+        AGJK Mentorship Program 2025
+      </h3>
+    </div>
+  </div>
+</div>
+           
             <div className="p-6">
               <p className="text-gray-700 mb-4">
                 The AGJK Mentorship Program is a transformative initiative designed to equip 160 journalists across Kenya with specialized skills in health reporting, climate change, gender-sensitive reporting, and audio production. This program combines expert-led training with hands-on story development to create impactful journalism.
@@ -195,7 +209,7 @@ const CapacityBuilding = () => {
           >
             <div className="relative h-64 md:h-80">
               <img
-                src={conferenceImg}
+                src={Media}
                 alt="Media conference attendees"
                 className="w-full h-full object-cover"
               />
@@ -339,7 +353,7 @@ const CapacityBuilding = () => {
           >
             <div className="relative h-64 md:h-80">
               <img
-                src={awardsImg}
+                src={Awards}
                 alt="Journalism awards ceremony"
                 className="w-full h-full object-cover"
               />
@@ -464,70 +478,70 @@ const CapacityBuilding = () => {
                   {/* Replace these image sources with your actual award highlight images */}
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight1}
                       alt="Award ceremony highlight 1"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight2}
                       alt="Award ceremony highlight 2"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight3}
                       alt="Award ceremony highlight 3"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight4}
                       alt="Award ceremony highlight 4"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight5}
                       alt="Award ceremony highlight 5"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight6}
                       alt="Award ceremony highlight 6"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight7}
                       alt="Award ceremony highlight 7"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight8}
                       alt="Award ceremony highlight 8"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight9}
                       alt="Award ceremony highlight 9"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
                   <div className="flex-shrink-0 w-80 h-64 snap-center">
                     <img
-                      src={mic}
+                      src={Highlight10}
                       alt="Award ceremony highlight 10"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
