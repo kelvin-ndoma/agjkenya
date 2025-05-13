@@ -9,7 +9,7 @@ const Pdf = () => {
       counties: [
         {
           name: "NAIROBI",
-          stations: ["Ruben fm", "Pamojafm", "Mtaani Radio", "Koch Fm", "Ghetto fm", "Mathare radio"]
+          stations: ["Ruben fm", "Pamojafm", "Mtaani Radio", "Koch Fm", "Ghetto fm"]
         },
         {
           name: "KAJIADO",
@@ -30,11 +30,15 @@ const Pdf = () => {
       counties: [
         {
           name: "TURKANA",
-          stations: ["Maata Radio", "Akicha", "Ekeyokon", "Imani", "Sayare", "Echami", "Ata Nayeche"]
+          stations: ["Maata Radio", "Akicha", "Ekeyokon", "Imani", "Sayare", "Echami", "Ata Nayeche", "Ejko Fm"]
         },
         {
           name: "MERU",
-          stations: ["Mugambo"]
+          stations: ["Mugambo", "Radio Wega"]
+        },
+         {
+          name: "EMBU",
+          stations: ["Kimuri Fm"]
         },
         {
           name: "WEST POKOT",
@@ -55,7 +59,7 @@ const Pdf = () => {
         },
         {
           name: "SAMBURU",
-          stations: ["Serian FM", "Radio Mchungaji"]
+          stations: ["Serian FM", "Radio Mchungaji", "Radio Ashe"]
         },
         {
           name: "WAJIR",
@@ -68,19 +72,23 @@ const Pdf = () => {
       ]
     },
     {
-      name: "LAKE REGION",
+      name: "NYANZA REGION",
       counties: [
         {
           name: "HOMA BAY",
-          stations: ["Ekialo Kiona", "Gulf Radio"]
+          stations: ["Ekialo Kiona", "Gulf Radio", "Radio Arise"]
+        },
+          {
+          name: "KISII",
+          stations: ["Kisii Fm", "Vuna Fm", "Inka Fm"]
         },
         {
           name: "MIGORI",
-          stations: ["Rameny FM", "Milanbo Fm"]
+          stations: ["Rameny FM", "Milambo Fm", "Radio Tarumbeta", "Togotane FM", "Radio Onagi"]
         },
         {
           name: "KISUMU",
-          stations: ["Nyanam Radio"]
+          stations: ["Nyanam Radio", "Radio Lake Victoria", "Jowi Fm", "Dada Radio", "Manene Radio", "Dala Fm", "Namlolwe Fm", "Radio Maria"]
         },
         {
           name: "SIAYA",
@@ -101,7 +109,7 @@ const Pdf = () => {
         },
         {
           name: "KERICHO",
-          stations: ["Radio Injili"]
+          stations: ["Radio Injili", "Konyon Fm", "Nlikop Fm", "Nyenyon FM", "BK Radio"]
         },
         {
           name: "NANDI",
@@ -109,7 +117,7 @@ const Pdf = () => {
         },
         {
           name: "NAROK",
-          stations: ["Olmaa Suswa FM", "Oltoitolemaa"]
+          stations: ["Olmaa Suswa FM", "Oltoitolemaa", "Gospo Fm"]
         }
       ]
     },
@@ -126,7 +134,11 @@ const Pdf = () => {
         },
         {
           name: "KAKAMEGA",
-          stations: ["Lubao fm"]
+          stations: ["Lubao fm", "Radio Isukuti", "West Fm"]
+        },
+         {
+          name: "TRANSNZOIA",
+          stations: ["Imani Radio", "Radio Mitume"]
         },
         {
           name: "VIHIGA",
@@ -141,17 +153,21 @@ const Pdf = () => {
           name: "TAITA TAVETA",
           stations: ["Mwanedu"]
         },
+         {
+          name: "TANA RIVER",
+          stations: ["VOX Radio"]
+        },
         {
           name: "MOMBASA",
-          stations: ["Radio Mvita"]
+          stations: ["Radio Mvita", "Sheki Fm", "Radio Rahma", "Radio Tumaini"]
         },
         {
           name: "KILIFI",
-          stations: ["Lulu", "Jahazi"]
+          stations: ["Lulu", "Jahazi", "Radio Bayana"]
         },
         {
           name: "KWALE",
-          stations: ["Kwaleranet", "Sifa Fm"]
+          stations: ["Kwaleranet", "Sifa Fm", "Kaya Radio"]
         }
       ]
     },
@@ -183,7 +199,7 @@ const Pdf = () => {
   };
 
   return (
-    <div className="mt-4 w-full max-w-lg">
+    <div className="mt-8 w-full max-w-lg">
       <h3 className="text-lg font-semibold text-[#640433] mb-4 text-left">
         Member Radio Stations by Region
       </h3>

@@ -12,31 +12,41 @@ import kioko from '../assets/Dennis.jpg'
 
 const About = () => {
   const employeeInfo = [
+
+
       {
       employeePic: kioko,
       employeeName: 'Dennis Kioko',
       employeeRole: 'Board Chair',
     },
+  {
+      employeePic: dennis,
+      employeeName: 'Dennis Beru',
+      employeeRole: 'Team Lead',
+    },
+      {
+      employeePic: molly,
+      employeeName: 'Molly Peter\'s',
+      employeeRole: 'Coordinator',
+    },
+
     {
       employeePic: martin,
       employeeName: 'Martin Kedenge',
       employeeRole: 'Operations Manager',
+    },
+    
+    {
+      employeePic: bosco,
+      employeeName: 'Bosco Kathima',
+      employeeRole: 'Programs Lead',
     },
     {
       employeePic: peris,
       employeeName: 'Peris',
       employeeRole: 'PR & Communications',
     },
-    {
-      employeePic: dennis,
-      employeeName: 'Dennis Beru',
-      employeeRole: 'Team Lead',
-    },
-    {
-      employeePic: bosco,
-      employeeName: 'Bosco Kathima',
-      employeeRole: 'Programs Lead',
-    },
+  
     {
       employeePic: benja,
       employeeName: 'Benjamin Radonde',
@@ -47,11 +57,7 @@ const About = () => {
       employeeName: 'Annette Kimeu',
       employeeRole: 'Programs Assistant',
     },
-    {
-      employeePic: molly,
-      employeeName: 'Molly Peter\'s',
-      employeeRole: 'Coordinator',
-    },
+  
     {
       employeePic: james,
       employeeName: 'James Mbulo Dolo',

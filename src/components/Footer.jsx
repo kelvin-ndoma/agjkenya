@@ -22,7 +22,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/association-of-grassroot-journalists-kenya/about" target="_blank" rel="noopener noreferrer">
                             <img className="w-6 h-6 filter brightness-0 invert" src={linkedin} alt="LinkedIn" />
                         </a>
                     </li>
