@@ -15,17 +15,17 @@ export const Testimonials = () => {
     const thematicAreaData = [
         {
             title: 'Capacity Building',
-            description: 'At the heart of AGJK’s mission is the empowerment of community journalists through structured training, mentorship, and hands-on skills development. We invest in building the capacity of grassroots media practitioners by equipping them with critical knowledge in journalism ethics, digital storytelling, fact-checking, media law, and emerging technologies. Through workshops, mentorship programs, and conferences, we aim to strengthen their professional growth, enabling them to tell impactful stories that inspire change and accountability in their communities.',
+            description: 'At the heart of AGJK’s mission is the empowerment of community journalists through structured training, mentorship, and hands-on skills development. We invest in building the capacity of grassroots media practitioners by equipping them with critical knowledge in journalism ethics, digital storytelling, fact-checking, media law, and emerging technologies. ',
             icon: cap,
         },
         {
             title: 'Advocacy / Campaigns',
-            description: 'Advocacy is at the heart of AGJK’s mission. We work with over 80 community media outlets across Kenya, leveraging our vast grassroots network to amplify underrepresented voices and advance social justice causes. AGJK plays a strategic role in creating, curating, producing, and disseminating impactful campaign content in collaboration with local and international partners. From youth empowerment and gender equality to health rights and environmental action, our campaigns are community-driven and evidence-based, ensuring real stories shape real change on the ground',
+            description: 'Advocacy is at the heart of AGJK’s mission. We work with over 80 community media outlets across Kenya, leveraging our vast grassroots network to amplify underrepresented voices and advance social justice causes. AGJK plays a strategic role in creating, curating, producing, and disseminating impactful campaign content in collaboration with local and international partners.',
             icon: ad,
         },
         {
             title: 'Organizational Growth',
-            description: 'We believe in leading by example. AGJK is committed to strengthening its internal structures, governance systems, and sustainability strategies to remain a credible, transparent, and effective organization. By investing in our own growth—through strategic planning, partnerships, resource mobilization, and team development—we ensure that our mission has long-term impact and that we continue to serve as a strong voice for grassroots journalists across Kenya and beyond.',
+            description: 'We believe in leading by example. AGJK is committed to strengthening its internal structures, governance systems, and sustainability strategies to remain a credible, transparent, and effective organization. By investing in our own growth—through strategic planning, partnerships, resource mobilization, and team development',
             icon: grow,
         },
     ];

@@ -12,30 +12,26 @@ import kioko from '../assets/Dennis.jpg'
 
 const About = () => {
   const employeeInfo = [
-
-
-      {
+    {
       employeePic: kioko,
       employeeName: 'Dennis Kioko',
       employeeRole: 'Board Chair',
     },
-  {
+    {
       employeePic: dennis,
       employeeName: 'Dennis Beru',
       employeeRole: 'Team Lead',
     },
-      {
+    {
       employeePic: molly,
       employeeName: 'Molly Peter\'s',
       employeeRole: 'Coordinator',
     },
-
     {
       employeePic: martin,
       employeeName: 'Martin Kedenge',
       employeeRole: 'Operations Manager',
     },
-    
     {
       employeePic: bosco,
       employeeName: 'Bosco Kathima',
@@ -46,7 +42,6 @@ const About = () => {
       employeeName: 'Peris',
       employeeRole: 'PR & Communications',
     },
-  
     {
       employeePic: benja,
       employeeName: 'Benjamin Radonde',
@@ -57,12 +52,35 @@ const About = () => {
       employeeName: 'Annette Kimeu',
       employeeRole: 'Programs Assistant',
     },
-  
     {
       employeePic: james,
       employeeName: 'James Mbulo Dolo',
       employeeRole: 'Project Officer',
     },
+  ]
+
+  const pillars = [
+    {
+      title: "Capacity Building",
+      subtitle: "Trainings / Skills Development",
+      description: "At the heart of AGJK's mission is the empowerment of community journalists through structured training, mentorship, and hands-on skills development. We invest in building the capacity of grassroots media practitioners by equipping them with critical knowledge in journalism ethics, digital storytelling, fact-checking, media law, and emerging technologies. Through workshops, mentorship programs, and conferences, we aim to strengthen their professional growth, enabling them to tell impactful stories that inspire change and accountability in their communities.",
+      icon: "📚",
+      color: "from-purple-500 to-indigo-600"
+    },
+    {
+      title: "Advocacy",
+      subtitle: "Campaigns",
+      description: "Advocacy is at the heart of AGJK's mission. We work with over 80 community media outlets across Kenya, leveraging our vast grassroots network to amplify underrepresented voices and advance social justice causes. AGJK plays a strategic role in creating, curating, producing, and disseminating impactful campaign content in collaboration with local and international partners. From youth empowerment and gender equality to health rights and environmental action, our campaigns are community-driven and evidence-based, ensuring real stories shape real change on the ground.",
+      icon: "📢",
+      color: "from-red-500 to-pink-600"
+    },
+    {
+      title: "Organizational Growth",
+      subtitle: "Sustainability & Development",
+      description: "We believe in leading by example. AGJK is committed to strengthening its internal structures, governance systems, and sustainability strategies to remain a credible, transparent, and effective organization. By investing in our own growth—through strategic planning, partnerships, resource mobilization, and team development—we ensure that our mission has long-term impact and that we continue to serve as a strong voice for grassroots journalists across Kenya and beyond.",
+      icon: "🌱",
+      color: "from-green-500 to-teal-600"
+    }
   ]
   
   return (
@@ -76,22 +94,20 @@ const About = () => {
       />
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16'>
         {/* Mission Section */}
-        <div className="mb-16">
-          <div className="space-y-4 text-gray-700">
-            <p>
-              AGJK seeks to promote media viability across community media in Kenya thus creating an engaged citizenry well informed with issues affecting them directly and indirectly. This contribution is made through capacity building for skill development to community, citizen and school journalists, advocacy, highlighting leadership and governance while building vital networks for strong partnerships to realize media viability in the field of community media.
-            </p>
-            <p>
-              AGJK recognizes that there are many community media journalists spread out across community radio stations, television stations, freelancers, bloggers and media practitioners who are dedicated to upholding the highest professional standards in their journalistic work, producing and disseminating factual and relevant information to the Kenyan masses through different community-based platforms.
-            </p>
-            <p>
-              The Community media landscape in Kenya operates in a diverse media environment facing complex challenges with regards to sustainability and viability including persisting financial constraints. Community media outlets have however braced the challenges and continued producing objective and relevant content for different target audiences in Kenya.
-            </p>
-            <p>
-              With access to information critical during the pandemic times and the Kenyan general elections, community media outlets filled the information void by broadcasting timely information to keep communities healthy and to enhance civic education to the general Kenyan citizenry.
-            </p>
-          </div>
-        </div>
+       <div className="mb-16">
+  <div className="space-y-4 text-gray-700">
+    <p>
+      AGJK supports media viability in Kenya by empowering community, citizen, and school journalists through skill-building, advocacy, and strategic partnerships. Our goal is to foster an informed and engaged citizenry.
+    </p>
+    <p>
+      We work with a diverse network of community media practitioners—across radio, TV, blogs, and freelance platforms—who uphold high professional standards and deliver relevant, factual content.
+    </p>
+    <p>
+      Despite financial and operational challenges, community media in Kenya continues to serve its audiences with impactful journalism, especially during critical moments like the pandemic and elections.
+    </p>
+  </div>
+</div>
+
 
         <p className='text-xl md:text-3xl font-bold text-start'>
           <span className=''>The faces of</span>
@@ -117,6 +133,31 @@ const About = () => {
           ))}
         </div>
 
+        {/* pillars */}
+        <div className="mt-20">
+          <p className='text-xl md:text-3xl font-bold text-start'>
+            <span className=''>Our</span>
+            <span className='text-gray-600 pl-2'>Pillars</span>
+          </p>
+          <p className='text-xl md:text-2xl font-bold text-start capitalize py-4 space-y-4 text-[#640433]'>
+            <span>The foundation of our impact: Core principles that drive our mission forward</span>
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            {pillars.map((pillar, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className={`absolute inset-0 bg-gradient-to-br ${pillar.color} opacity-90`}></div>
+                <div className="relative z-10 p-8 h-full flex flex-col">
+                  <div className="text-4xl mb-4">{pillar.icon}</div>
+                  <h3 className="text-2xl font-bold text-white mb-1">{pillar.title}</h3>
+                  <h4 className="text-lg font-semibold text-white/90 mb-4">{pillar.subtitle}</h4>
+                  <p className="text-white/90 flex-grow">{pillar.description}</p>
+                                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* partners */}
         <div className="mt-20">
           <p className='text-xl md:text-3xl font-bold text-start'>
@@ -125,7 +166,6 @@ const About = () => {
           </p>
           <p className='text-xl md:text-2xl font-bold text-start capitalize py-4 space-y-4 text-[#640433]'>
             <span> Collaborative excellence: Building bridges, <br /></span>
-            <span>driving success</span>
           </p>
         </div>
       </div>
