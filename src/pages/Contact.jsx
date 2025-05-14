@@ -1,32 +1,68 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import Hero from "../components/Hero";
 import Map from "../components/Map";
+import { contactInfo, busInfo } from "../assets/data";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      title: 'phone',
-      description: '+254 769 539 198',
-      icon: ''
-    },
-    {
-      title: 'email',
-      description: 'info@agjkenya.com',
-      icon: ''
-    }
-  ]
+  const form = useRef();
+  // errors
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [messageError, setMessageError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
-  const busInfo = [
-    {
-      days: 'Monday - Friday',
-      hours: '8:00 - 18:30',
-    },
-    {
-      days: 'Saturday',
-      hours: '8:00 - 14:00',
+  // .js vars
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const templateId = import.meta.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUB_KEY;
+
+  const validateForm = () => {
+    let isValid = true;
+    const name = form.current.user_name.value.trim();
+    const email = form.current.user_email.value.trim();
+    const message = form.current.message.value.trim();
+
+    setNameError(name ? '' : 'Name is required');
+    setEmailError(email ? (/\S+@\S+\.\S+/.test(email) ? '' : 'Invalid email format') : 'Email is required');
+    setMessageError(message ? '' : 'Message is required');
+
+    if (!name || !email || !/\S+@\S+\.\S+/.test(email) || !message) {
+      isValid = false;
     }
-  ]
+    return isValid;
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      emailjs
+        .sendForm(serviceId, templateId, form.current, publicKey)
+        .then(
+          (result) => {
+            console.log('SUCCESS!', result.text);
+            setSuccessMessage('Your message has been received. We will be in touch shortly.');
+            form.current.reset();
+            setNameError('');
+            setEmailError('');
+            setMessageError('');
+            setTimeout(() => {
+              setSuccessMessage('');
+            }, 5000);
+          },
+          (error) => {
+            console.error('FAILED...', error);
+            setSuccessMessage('Failed to send message. Please try again.');
+            setTimeout(() => {
+              setSuccessMessage('');
+            }, 5000);
+          },
+        );
+    }
+  };
+
   return (
     <>
       <Hero
@@ -44,33 +80,42 @@ const Contact = () => {
             <p className="text-xl font-bold text-start py-4">
               Let's Connect. Your Questions Answered.
             </p>
-            <form id="contactForm" className="space-y-8 p-4 md:p-8 bg-[#800000]/10 rounded-xl">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              id="contactForm"
+              className="space-y-8 p-4 md:p-8 bg-[#800000]/10 rounded-xl"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label for="name" className="block mb-2 text-sm font-medium">
+                  <label htmlFor="name" className="block mb-2 text-sm font-medium">
                     Your name
                   </label>
                   <input
                     type="text"
                     id="name"
-                    name="name"
-                    className="shadow-sm border border-gray-300 text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                    name="user_name"
+                    className={`shadow-sm border ${nameError ? 'border-red-500' : 'border-gray-300'} text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5`}
                     placeholder="John Doe"
                     required
+                    onChange={() => setNameError(form.current.user_name.value.trim() ? '' : 'Name is required')}
                   />
+                  {nameError && <p className="mt-1 text-red-500 text-sm">{nameError}</p>}
                 </div>
                 <div>
-                  <label for="email" className="block mb-2 text-sm font-medium">
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium">
                     Your email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    name="email"
-                    className="shadow-sm border border-gray-300 text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                    name="user_email"
+                    className={`shadow-sm border ${emailError ? 'border-red-500' : 'border-gray-300'} text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5`}
                     placeholder="janedoe@gmail.com"
                     required
+                    onChange={() => setEmailError(form.current.user_email.value.trim() ? (/\S+@\S+\.\S+/.test(form.current.user_email.value.trim()) ? '' : 'Invalid email format') : 'Email is required')}
                   />
+                  {emailError && <p className="mt-1 text-red-500 text-sm">{emailError}</p>}
                 </div>
               </div>
               <div>
@@ -80,32 +125,40 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
-                  name="text"
+                  name="title"
                   className="shadow-sm border border-gray-300 text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                   placeholder="Let us know how we can help you"
                   required
                 />
               </div>
               <div className="sm:col-span-2">
-                <label for="message" className="block mb-2 text-sm font-medium">
+                <label htmlFor="message" className="block mb-2 text-sm font-medium">
                   Your message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows="6"
-                  className="shadow-sm border border-gray-300 text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                  className={`shadow-sm border ${messageError ? 'border-red-500' : 'border-gray-300'} text-gray-900 bg-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5`}
                   placeholder="Leave a comment..."
                   required
+                  onChange={() => setMessageError(form.current.message.value.trim() ? '' : 'Message is required')}
                 ></textarea>
+                {messageError && <p className="mt-1 text-red-500 text-sm">{messageError}</p>}
               </div>
               <button
                 type="submit"
+                value="Send"
                 className="bg-accentColor focus:ring-4 focus:outline-none rounded-xl text-md font-semibold px-6 py-2 text-center text-white bg-[#640433] hover:bg-[#4c2f3d] sm:w-fit"
               >
                 Send message
               </button>
             </form>
+            {successMessage && (
+              <div className="mt-4 p-4 bg-green-200 text-green-800 rounded-md">
+                {successMessage}
+              </div>
+            )}
           </div>
           {/* info */}
           <div className="two">

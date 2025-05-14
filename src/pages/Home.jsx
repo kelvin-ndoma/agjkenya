@@ -76,13 +76,13 @@ export default function Home() {
             AGJK recognizes that there are many community media journalists spread out across community radio stations, television stations, freelancers, bloggers, and media practitioners who are dedicated to upholding the highest professional standards in their journalistic work, producing and disseminating factual and relevant information to the Kenyan masses through different community-based platforms.
           </p>
           <div className="flex justify-center mt-4">
-  <Link 
-    to="/contact"
-    className="bg-white text-[#640433] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300"
-  >
-    Join Now
-  </Link>
-</div>
+            <Link
+              to="/contact"
+              className="bg-white text-[#640433] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300"
+            >
+              Join Now
+            </Link>
+          </div>
         </div>
       </motion.div>
 

@@ -67,7 +67,7 @@ export const Interventions = ({ interventions }) => {
           Want to know how we make impact? Explore our mission and methodology.
         </p>
         <button
-          onClick={() => navigate("/about-us")}
+          onClick={() => navigate("/our-team")}
           className="whitespace-nowrap bg-[#640433] text-white px-6 py-2 rounded-md hover:bg-[#4a0326] transition-colors font-medium shadow-sm hover:shadow-md"
         >
           Learn More →
