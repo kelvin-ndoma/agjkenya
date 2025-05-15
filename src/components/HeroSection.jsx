@@ -11,24 +11,6 @@ function HeroSection() {
         backgroundBlendMode: "overlay",
       }}>
       <header className="container mx-auto px-4 flex justify-between items-center">
-
-        <div className="md:hidden">
-          {/* Placeholder for mobile menu icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </div>
       </header>
       <div className="container mx-auto px-4 md:px-8 py-16 md:flex items-center justify-between">
         <div className="md:w-1/2 lg:w-5/12 text-center md:text-left">
