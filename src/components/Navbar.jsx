@@ -43,10 +43,9 @@ const Navbar = () => {
                 <div className="flex justify-between h-20">
                     <Link to="/" className="flex-shrink-0 flex items-center">
                         <img className="h-22 w-auto" src={logo} alt="AGJ Kenya" />
-                        {/* Is this supposed to be here? */}
-                        {/* <span className="ml-2 text-xl font-semibold text-[#640433] hidden md:block">
+                        <span className="ml-2 text-xl font-semibold text-[#640433] hidden md:block">
                             AGJ Kenya
-                        </span> */}
+                        </span> 
                     </Link>
 
                     {/* Mobile menu button */}
@@ -77,6 +76,17 @@ const Navbar = () => {
                             }`}
                         >
                             Home
+                        </Link>
+
+                        <Link
+                            to="/about"
+                            className={`px-4 py-2 rounded-md text-sm font-medium ${
+                                isActive('/about')
+                                    ? 'bg-[#640433] text-white'
+                                    : 'text-[#640433] hover:bg-[#640433]/10'
+                            }`}
+                        >
+                            About Us
                         </Link>
 
                         {/* Programs Dropdown */}
@@ -139,7 +149,7 @@ const Navbar = () => {
                         </div>
 
                         {/* Other Navigation Links */}
-                        {['/our-team', '/contact', '/gallery', '/blogs'].map((path) => (
+                        {['/contact', '/gallery'].map((path) => (
                             <Link
                                 key={path}
                                 to={path}
@@ -166,6 +176,15 @@ const Navbar = () => {
                         }`}
                     >
                         Home
+                    </Link>
+
+                    <Link
+                        to="/about"
+                        className={`block px-3 py-2 rounded-md text-base font-medium ${
+                            isActive('/about') ? 'bg-[#640433] text-white' : 'text-[#640433] hover:bg-[#640433]/10'
+                        }`}
+                    >
+                        About Us
                     </Link>
 
                     <div ref={mobileDropdownRef}>
@@ -220,7 +239,7 @@ const Navbar = () => {
                         )}
                     </div>
 
-                    {['/our-team', '/contact', '/gallery', '/blogs'].map((path) => (
+                    {['/contact', '/gallery'].map((path) => (
                         <Link
                             key={path}
                             to={path}

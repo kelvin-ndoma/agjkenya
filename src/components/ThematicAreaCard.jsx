@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const ThematicAreaCard = ({ join }) => {
     return (
@@ -28,6 +29,15 @@ export const ThematicAreaCard = ({ join }) => {
                         </div>
                     </motion.div>
                 ))}
+            </div>
+            {/* Learn More Button */}
+            <div className="flex justify-center mt-6">
+                <Link 
+                    to="/about" 
+                    className="px-6 py-3 bg-[#640433] text-white rounded-lg hover:bg-[#8a0a4a] transition-colors duration-300 font-medium"
+                >
+                    Learn more about us
+                </Link>
             </div>
         </div>
     );

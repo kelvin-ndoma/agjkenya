@@ -13,22 +13,22 @@ import { itemVariants } from '../components/Variants';
 export const Testimonials = () => {
     // thematic focus
     const thematicAreaData = [
-        {
-            title: 'Capacity Building',
-            description: 'At the heart of AGJK’s mission is the empowerment of community journalists through structured training, mentorship, and hands-on skills development. We invest in building the capacity of grassroots media practitioners by equipping them with critical knowledge in journalism ethics, digital storytelling, fact-checking, media law, and emerging technologies. ',
-            icon: cap,
-        },
-        {
-            title: 'Advocacy / Campaigns',
-            description: 'Advocacy is at the heart of AGJK’s mission. We work with over 80 community media outlets across Kenya, leveraging our vast grassroots network to amplify underrepresented voices and advance social justice causes. AGJK plays a strategic role in creating, curating, producing, and disseminating impactful campaign content in collaboration with local and international partners.',
-            icon: ad,
-        },
-        {
-            title: 'Organizational Growth',
-            description: 'We believe in leading by example. AGJK is committed to strengthening its internal structures, governance systems, and sustainability strategies to remain a credible, transparent, and effective organization. By investing in our own growth—through strategic planning, partnerships, resource mobilization, and team development',
-            icon: grow,
-        },
-    ];
+    {
+        title: 'Capacity Building',
+        description: 'AGJK empowers community journalists through training, mentorship, and practical skills in ethics, storytelling, fact-checking, media law, and emerging tech.',
+        icon: cap,
+    },
+    {
+        title: 'Advocacy / Campaigns',
+        description: 'Through a network of 80+ community media outlets, AGJK drives impactful campaigns that amplify grassroots voices and promote social justice.',
+        icon: ad,
+    },
+    {
+        title: 'Organizational Growth',
+        description: 'AGJK strengthens its internal systems, partnerships, and sustainability to lead by example and remain effective and transparent.',
+        icon: grow,
+    },
+];
 
     const testimonialsData = [
         {
@@ -36,13 +36,8 @@ export const Testimonials = () => {
             name: 'Bev Watkinson',
             title: 'CONSULTANT',
             image: partner,
-        },
-        {
-            quote: 'The workshops offered by AGJK are fantastic! I learned practical skills that I use every single day in my reporting.',
-            name: 'Adam Chelse',
-            title: 'HEAD OF SALES, INTEL',
-            image: geffect,
-        },
+        }
+        
     ];
 
     return (

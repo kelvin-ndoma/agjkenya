@@ -68,7 +68,7 @@ export default function Home() {
       <HeroSection />
       <Cards cards={cardInfo} iconSize={48} />
       {/* Join */}
-      <motion.div className="flex flex-col items-center justify-center bg-[#640433] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white text-center rounded-2xl"
+      <motion.div className="flex flex-col items-center justify-center bg-[#640433] max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white text-center rounded-2xl"
         variants={itemVariants}>
         <div className="max-w-3xl space-y-10">
           <p className="text-xl md:text-2xl py-2 font-bold capitalize">Join Us</p>

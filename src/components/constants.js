@@ -1,4 +1,4 @@
-export const textContent = ['AGJK empowers grassroots journalists to drive change in Kenya.'];
+export const textContent = ['The Association of Grassroot Journalists Kenya (AGJK) strives to promote the flow of information and seeks to inspire successive generations of talented individuals to become dedicated journalists.AGJK upholds professionalism by supporting accurate and reliable reporting through various initiatives for community media nationwide.'];
 
 export const interventionData = [
   { 
