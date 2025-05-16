@@ -3,24 +3,28 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const Map = () => {
+  // Google Maps Location: -1.3119717515962175, 36.89107988824873
+  const targetLatitude = -1.3119717515962175;
+  const targetLongitude = 36.89107988824873;
+
   useEffect(() => {
-    // Initialize the map
-    const map = L.map('map').setView([-1.325, 36.865], 15); // Coordinates of Avenue Park 2, Embakasi South, Nairobi
+    // Initialize the map, centering on the new location
+    const map = L.map('map').setView([targetLatitude, targetLongitude], 16); 
 
     // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    // Add a marker
-    L.marker([-1.325, 36.865])
+    // Add a marker for the new location
+    L.marker([targetLatitude, targetLongitude])
       .addTo(map)
-      .bindPopup('AGJ')
+      .bindPopup('AGJK') 
       .openPopup();
 
     // Cleanup on component unmount
     return () => {
       map.remove();
     };
-  }, []);
+  }, [targetLatitude, targetLongitude]); 
 
   return (
     <div
