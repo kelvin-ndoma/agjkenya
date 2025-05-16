@@ -10,9 +10,17 @@ import amt from '../assets/amt.svg';
 import cdtd from '../assets/cdtd.svg';
 import habitat from '../assets/habitat.svg';
 import amwik from '../assets/amwik.svg';
+import wsup from '../assets/wsup.svg'
+import kengen from '../assets/kengen.svg'
+import med from '../assets/med.svg' 
+import forum from '../assets/forum.svg' 
+import ncc from '../assets/ncc.svg' 
+import tisa from '../assets/tisa.svg' 
+import sato from '../assets/sato.svg' 
+
 
 export const Marquee = () => {
-    const partnerImg = [partner, geffect, ticah, shofco, pacja, saf, amt, habitat, cdtd, amwik];
+    const partnerImg = [partner, geffect, ticah, shofco, pacja, saf, kengen, amt, habitat, cdtd, amwik, wsup, ncc, med, forum, tisa, sato];
     return (
         <>
             <div className="overflow-x-hidden">
