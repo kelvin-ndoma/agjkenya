@@ -44,19 +44,19 @@ const AdvocacyCampaigns = () => {
     <div className="w-full bg-gray-50">
       {/* Hero Section */}
       <motion.section 
-        className="w-full bg-gradient-to-br from-[#640433] to-[#600000] py-24 md:py-32 relative overflow-hidden"
+        className="w-full bg-gradient-to-br py-24 md:py-32 relative overflow-hidden"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
-        <div className="absolute inset-0 bg-black/20 z-0" />
+        <div className="absolute inset-0  z-0" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div variants={itemVariants} className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Advocacy <span className="text-yellow-200">Campaigns</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-6 leading-tight">
+              Advocacy <span className="text-yellow-500">Campaigns</span>
             </h1>
             <motion.p 
-              className="text-xl text-white/90 max-w-3xl mx-auto"
+              className="text-xl text-gray/90 max-w-3xl mx-auto"
               variants={fadeIn}
             >
               Our initiatives empower communities through media, education, and cross-cultural collaborations.

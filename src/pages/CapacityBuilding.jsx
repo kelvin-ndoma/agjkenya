@@ -4,19 +4,20 @@ import { motion } from 'framer-motion';
 import community from '../gallery/community.jpg';
 import conferenceImg from '../assets/mic.jpg';
 import Awards from '../gallery/Awards.jpg';
-import trainingImg from '../assets/mic.jpg';
-import networkingImg from '../assets/mic.jpg';
+import trainingImg from '../assets/workshop.jpg';
+import networkingImg from '../assets/work.png';
 import Media from '../gallery/media.jpg'
-import Highlight1 from '../gallery/Highlight1.jpg'
-import Highlight2 from '../gallery/Highlight2.jpg'
-import Highlight3 from '../gallery/Highlight3.jpg'
-import Highlight4 from '../gallery/Highlight4.jpg'
+import pannel from '../assets/pannel.jpg'
+import Highlight1 from '../assets/Awards1.jpg'
+import Highlight2 from '../gallery/Awards2.jpg'
+import Highlight3 from '../gallery/Awards3.jpg'
+import Highlight4 from '../gallery/Awards4.jpg'
 import Highlight5 from '../gallery/Highlight5.jpg'
-import Highlight6 from '../gallery/Highlight6.jpg'
+import Highlight6 from '../gallery/Awards 6.jpg'
 import Highlight7 from '../gallery/Highlight7.jpg'
-import Highlight8 from '../gallery/Highlight8.jpg'
-import Highlight9 from '../gallery/Highlight9.jpg'
-import Highlight10 from '../gallery/Highlight10.jpg'
+import Highlight8 from '../gallery/Awards8.jpg'
+import Highlight9 from '../gallery/Awards9.jpg'
+import Highlight10 from '../gallery/Awards10.jpg'
 
 
 
@@ -64,19 +65,19 @@ const CapacityBuilding = () => {
     <div className="w-full bg-gray-50">
       {/* Hero Section */}
       <motion.section
-        className="w-full bg-gradient-to-br from-[#640433] to-[#420218] py-24 md:py-32 relative overflow-hidden"
+        className="w-full py-24 md:py-32 relative overflow-hidden"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
-        <div className="absolute inset-0 bg-black/20 z-0" />
+        <div className="absolute inset-0 z-0" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div variants={itemVariants} className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Capacity <span className="text-yellow-200">Building</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-6 leading-tight">
+              Capacity <span className="text-yellow-500">Building</span>
             </h1>
             <motion.p
-              className="text-xl text-white/90 max-w-3xl mx-auto"
+              className="text-xl text-gray/90 max-w-3xl mx-auto"
               variants={fadeIn}
             >
               Empowering journalists through training, mentorship, and professional development
@@ -108,23 +109,23 @@ const CapacityBuilding = () => {
             variants={itemVariants}
           >
             <div className="relative w-full aspect-video max-h-[400px]">
-  <img
-    src={community}
-    alt="Journalists in mentorship session"
-    className="w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 md:p-6">
-    <div className="w-full max-w-4xl mx-auto">
-      <span className="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-xs md:text-sm font-bold mb-2">
-        Active Program
-      </span>
-      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
-        AGJK Mentorship Program 2025
-      </h3>
-    </div>
-  </div>
-</div>
-           
+              <img
+                src={community}
+                alt="Journalists in mentorship session"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 md:p-6">
+                <div className="w-full max-w-4xl mx-auto">
+                  <span className="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-xs md:text-sm font-bold mb-2">
+                    Active Program
+                  </span>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
+                    AGJK Mentorship Program 2025
+                  </h3>
+                </div>
+              </div>
+            </div>
+
             <div className="p-6">
               <p className="text-gray-700 mb-4">
                 The AGJK Mentorship Program is a transformative initiative designed to equip 160 journalists across Kenya with specialized skills in health reporting, climate change, gender-sensitive reporting, and audio production. This program combines expert-led training with hands-on story development to create impactful journalism.
@@ -573,20 +574,20 @@ const CapacityBuilding = () => {
 
         {/* Training Gallery */}
         <motion.div
-          className="mb-16"
+          className="mb-16 px-4 sm:px-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={containerVariants}
         >
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-[#640433] mb-8 text-center"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#640433] mb-6 sm:mb-8 text-center"
             variants={itemVariants}
           >
             Training Gallery
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 image: trainingImg,
@@ -599,27 +600,27 @@ const CapacityBuilding = () => {
                 description: "Building connections among media professionals"
               },
               {
-                image: conferenceImg,
+                image: pannel,
                 title: "Panel Discussions",
                 description: "Engaging conversations on media topics"
               }
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433]"
+                className="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-[#640433]"
                 variants={itemVariants}
                 custom={index}
                 whileHover={{ y: -5 }}
               >
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                <div className="relative h-40 sm:h-48 mb-3 sm:mb-4 rounded-md sm:rounded-lg overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-1 sm:mb-2">{item.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{item.description}</p>
               </motion.div>
             ))}
           </div>
