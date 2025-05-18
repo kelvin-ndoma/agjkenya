@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/HeroSection';
@@ -7,7 +8,7 @@ import Button from '../components/Button';
 import { itemVariants } from '../components/Variants';
 import { Testimonials } from './Testimonials';
 import Partners from '../components/Partners';
-// Data impors
+// Data imports
 import { textContent } from '../components/constants'
 
 // home svg elements
@@ -38,7 +39,6 @@ const ThirdSVG = ({ fill, size }) => (
 );
 
 export default function Home() {
-
   const cardInfo = [
     {
       icon: <FirstSVG />,
@@ -53,21 +53,64 @@ export default function Home() {
     {
       icon: <ThirdSVG />,
       title: "OUR MISSION",
-      description: 'To promote the flow of information while creating viable media, championinginnovation.'
+      description: 'To promote the flow of information while creating viable media, championing innovation.'
     }
   ];
 
   return (
-    // max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16
     <div className="home">
-      {/* <ContentSection
-        text={textContent}
-        imageSrc={mic}
-        imageAlt="AGJ Kenya"
-      /> */}
+      <Helmet>
+        <title>AGJK Kenya | Association of Grassroot Journalists of Kenya</title>
+        <meta 
+          name="description" 
+          content="The Association of Grassroot Journalists of Kenya (AGJK) connects and empowers community media professionals across Kenya to promote factual, solution-based journalism." 
+        />
+        <meta 
+          name="keywords" 
+          content="AGJK, Kenya journalists, community media Kenya, grassroots journalism, Kenyan reporters, media association Kenya, journalism network" 
+        />
+        <meta property="og:title" content="AGJK Kenya | Empowering Community Journalists" />
+        <meta 
+          property="og:description" 
+          content="Connecting and supporting grassroots journalists across Kenya to promote factual, community-focused reporting." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.agjkenya.com" />
+        <meta property="og:image" content="https://www.agjkenya.com/images/og-agjk-home.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AGJK Kenya | Association of Grassroot Journalists of Kenya" />
+        <meta 
+          name="twitter:description" 
+          content="The voice of community journalists in Kenya - promoting professional standards and factual reporting." 
+        />
+        <meta name="twitter:image" content="https://www.agjkenya.com/images/twitter-agjk-home.jpg" />
+        <link rel="canonical" href="https://www.agjkenya.com" />
+        
+        {/* Structured data for SEO */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Association of Grassroot Journalists of Kenya",
+              "alternateName": "AGJK",
+              "url": "https://www.agjkenya.com",
+              "logo": "https://www.agjkenya.com/images/agjk-logo.png",
+              "sameAs": [
+                "https://www.facebook.com/AGJKenya",
+                "https://twitter.com/AGJKenya",
+                "https://www.linkedin.com/company/agjkenya"
+              ],
+              "description": "Professional association connecting and empowering community journalists across Kenya"
+            }
+          `}
+        </script>
+      </Helmet>
+
       <HeroSection />
       <Cards cards={cardInfo} iconSize={48} />
-      {/* Join */}
+      
+      {/* Join Section */}
       <motion.div className="flex flex-col items-center justify-center bg-[#640433] max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white text-center rounded-2xl"
         variants={itemVariants}>
         <div className="max-w-3xl space-y-10">
@@ -91,7 +134,6 @@ export default function Home() {
 
       {/* Registered */}
       <Testimonials />
-
     </div>
   );
 }

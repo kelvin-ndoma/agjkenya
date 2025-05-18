@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import community from '../gallery/community.jpg';
@@ -18,7 +19,6 @@ import Highlight7 from '../gallery/Highlight7.jpg'
 import Highlight8 from '../gallery/Awards8.jpg'
 import Highlight9 from '../gallery/Awards9.jpg'
 import Highlight10 from '../gallery/Awards10.jpg'
-
 
 
 
@@ -63,6 +63,35 @@ const fadeIn = {
 const CapacityBuilding = () => {
   return (
     <div className="w-full bg-gray-50">
+
+      <Helmet>
+        <title>Capacity Building Programs | AGJK - Empowering Grassroots Journalists in Kenya</title>
+        <meta
+          name="description"
+          content="AGJK offers comprehensive capacity building programs including mentorship, media conferences, and journalism awards to empower grassroots journalists across Kenya."
+        />
+        <meta
+          name="keywords"
+          content="AGJK Kenya, journalism training Kenya, media mentorship, community journalism awards, grassroots media, journalist capacity building, Kenya media conferences"
+        />
+        <meta property="og:title" content="Capacity Building Programs | AGJK Kenya" />
+        <meta
+          property="og:description"
+          content="Enhancing journalism skills through mentorship, training, and recognition programs for community journalists in Kenya."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.agjkenya.com/capacity-building" />
+        <meta property="og:image" content="https://www.agjkenya.com/images/og-capacity-building.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Capacity Building Programs | AGJK Kenya" />
+        <meta
+          name="twitter:description"
+          content="Empowering journalists through training, mentorship, and professional development in Kenya."
+        />
+        <meta name="twitter:image" content="https://www.agjkenya.com/images/twitter-capacity-building.jpg" />
+        <link rel="canonical" href="https://www.agjkenya.com/capacity-building" />
+      </Helmet>
+
       {/* Hero Section */}
       <motion.section
         className="w-full py-24 md:py-32 relative overflow-hidden"

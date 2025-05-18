@@ -11,7 +11,7 @@ const Partners = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-2 md:py-8 max-w-7xl mx-auto ">
         {/* First column */}
         <div className="space-y-4 mb-4">
-          <div className="flex items-center justify-center md:justify-start gap-2">
+          <div className="flex items-center justify-center md:justify-start gap-10">
             <Count />
             <p>
               <span className="font-semibold pr-2 text-xl">Number of</span>
@@ -21,7 +21,7 @@ const Partners = () => {
           {/* pdf */}
           <Pdf />
         </div>
-        {/* Second column with images and text below */}
+
         {/* Images section */}
         <div className="flex flex-col items-start space-y-4">
           <img className='w-auto h-full img-fluid flex justify-start items-start' src={prescence} alt="presence" />

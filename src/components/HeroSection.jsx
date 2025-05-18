@@ -20,7 +20,7 @@ function HeroSection() {
           </p>
           <div className="flex justify-start items-start">
             {/* Use Link instead of href */}
-            <Link to="/our-team">
+            <Link to="/about">
               <Button buttons={[{ label: "read more", variant: "primary" }]} />
             </Link>
           </div>

@@ -1,19 +1,17 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
+import { Helmet } from "react-helmet";
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-import Hero from "../components/Hero";
 import Map from "../components/Map";
 import { contactInfo, busInfo } from "../assets/data";
 
 const Contact = () => {
   const form = useRef();
-  // errors
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
-  // .js vars
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_PUB_KEY;
@@ -65,14 +63,39 @@ const Contact = () => {
 
   return (
     <>
-      <Hero
-        title="Contact"
-        titleExt="Us"
-        subtitle="We'd Love to Hear From You!"
-        bgColorFrom="#800000"
-        bgColorTo="#600000"
-      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <Helmet>
+          <title>Contact Us | AGJK - Connect with Grassroots Journalism Kenya</title>
+          <meta
+            name="description"
+            content="Get in touch with AGJK for media collaborations, support, or questions regarding our grassroots journalism programs in Kenya."
+          />
+          <meta
+            name="keywords"
+            content="AGJK Kenya contact, grassroots journalism support, media inquiries Kenya, journalism Kenya, contact AGJK, journalist mentorship Kenya"
+          />
+          <meta property="og:title" content="Contact Us | AGJK Kenya" />
+          <meta
+            property="og:description"
+            content="Reach out to AGJK for media partnerships, support, and general inquiries about empowering grassroots journalists in Kenya."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.agjkenya.com/contact" />
+          <meta property="og:image" content="https://www.agjkenya.com/images/og-contact.jpg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Contact Us | AGJK Kenya" />
+          <meta
+            name="twitter:description"
+            content="Have a question or want to collaborate? Contact AGJK and be part of empowering grassroots journalism in Kenya."
+          />
+          <meta name="twitter:image" content="https://www.agjkenya.com/images/twitter-contact.jpg" />
+          <link rel="canonical" href="https://www.agjkenya.com/contact" />
+        </Helmet>
+
+        {/* Contact Us Heading */}
+        <h2 className="text-4xl font-extrabold text-center mb-8 text-[#640433]">
+          Contact Us
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
           {/* form */}
@@ -119,7 +142,7 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <label for="subject" className="block mb-2 text-sm font-medium">
+                <label htmlFor="subject" className="block mb-2 text-sm font-medium">
                   Subject
                 </label>
                 <input
@@ -160,64 +183,53 @@ const Contact = () => {
               </div>
             )}
           </div>
+
           {/* info */}
           <div className="two">
-
-            {/* row a: contact info */}
             <div className="contact-info">
-              <p className="text-base font-semibold text-gray-600 pb-2 md:pb-3">If you have any questions, please feel free to get in touch with us via phone, text email, the form below, or even on social media</p>
+              <p className="text-base font-semibold text-gray-600 pb-2 md:pb-3">
+                If you have any questions, please feel free to get in touch with us via phone, text, email, the form below, or even on social media.
+              </p>
               <div className="grid grid-cols-1 gap-4">
                 <div className="space-y-2 p-4 bg-[#800000]/10 rounded-xl">
                   <p className="uppercase font-bold text-base">contact information</p>
                   <hr className="text-gray-500" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
                     <div className="grid grid-cols-1 gap-6 mb-2 items-center">
-                      {/* Map contactInfo here */}
                       {contactInfo.map((item, index) => (
                         <motion.div
                           key={index}
                           className="flex items-center space-x-4 p-4 border-b-6 border-[#640433] rounded-2xl"
                         >
-                          {/* Image Section */}
                           {item.icon && <img src={item.icon} alt={item.title} className="w-12 h-12" />}
-
-                          {/* Text Section */}
                           <div>
                             <h3 className="text-sm capitalize font-semibold mb-1 text-start">{item.title}</h3>
                             <p className="text-sm opacity-75 text-start">{item.description}</p>
                           </div>
                         </motion.div>
                       ))}
-
                     </div>
-
                   </div>
                 </div>
+
                 {/* business info */}
                 <div className="space-y-2 p-4 bg-[#800000]/10 rounded-xl">
                   <p className="uppercase font-bold text-base">working hours</p>
                   <hr className="text-gray-500" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
                     <div className="grid grid-cols-1 gap-6 mb-2 items-center">
-                      {/* Map contactInfo here */}
                       {busInfo.map((item, index) => (
                         <motion.div
                           key={index}
                           className="flex items-center space-x-4 p-2 rounded-2xl"
                         >
-
-                          {/* Text Section */}
                           <div>
                             <h3 className="text-sm capitalize font-semibold mb-1 text-start">{item.days}</h3>
                             <p className="text-sm opacity-75 text-start">{item.hours}</p>
                           </div>
                         </motion.div>
                       ))}
-
                     </div>
-
                   </div>
                 </div>
               </div>

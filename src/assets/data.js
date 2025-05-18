@@ -5,74 +5,67 @@ export const galleryImages = [
     id: 1,
     alt: "Award Ceremony 2023",
     src: "/src/assets/img1.jpg",
-    category: "ceremony"
+   
   },
   {
     id: 2,
     alt: "Winner Acceptance",
     src: "/src/assets/img2.jpg",
-    category: "winner"
+   
   },
   {
     id: 3,
     alt: "Keynote Speech",
     src: "/src/assets/img3.jpg",
-    category: "speech"
+  
   },
   {
     id: 4,
     alt: "Panel Discussion",
-    src: "/src/assets/img4.jpg",
-    category: "panel"
+    src: "/src/assets/img4.jpg"
+ 
   },
   {
     id: 5,
     alt: "Networking Session",
-    src: "/src/assets/img5.jpg",
-    category: "networking"
+    src: "/src/assets/img5.jpg"
   },
   {
     id: 6,
     alt: "Guest Speaker",
-    src: "/src/assets/img6.jpg",
-    category: "speaker"
+    src: "/src/assets/img6.jpg"
+    
   },
   // Add 6 more images to reach 12
   {
     id: 7,
     alt: "Audience Engagement",
-    src: "/src/assets/img7.jpg",
-    category: "audience"
+    src: "/src/assets/img7.jpg"
   },
   {
     id: 8,
     alt: "Award Presentation",
-    src: "/src/assets/img8.jpg",
-    category: "award"
+    src: "/src/assets/img8.jpg"
   },
   {
     id: 9,
     alt: "Media Team",
-    src: "/src/assets/img9.jpg",
-    category: "team"
+    src: "/src/assets/img9.jpg"
   },
   {
     id: 10,
     alt: "Workshop Session",
-    src: "/src/assets/img10.jpg",
-    category: "workshop"
+    src: "/src/assets/img10.jpg"
   },
   {
     id: 11,
     alt: "Group Photo",
-    src: "/src/assets/img11.jpg",
-    category: "group"
+    src: "/src/assets/img11.jpg"
   },
   {
     id: 12,
     alt: "Closing Remarks",
-    src: "/src/assets/img12.jpg",
-    category: "closing"
+    src: "/src/assets/img12.jpg"
   }
 ];
 

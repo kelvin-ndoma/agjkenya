@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { galleryImages, focusAreas } from "../assets/data";
 
 const HighlightsPage = () => {
@@ -43,6 +44,35 @@ const HighlightsPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Highlights 2024 | AGJK - Celebrating Community Journalism in Kenya</title>
+        <meta
+          name="description"
+          content="Explore the 2024 AGJK Conference highlights, including key objectives, focus areas, and a gallery of impactful moments celebrating grassroots journalism in Kenya."
+        />
+        <meta
+          name="keywords"
+          content="AGJK 2024 highlights, grassroots journalism Kenya, media conference Kenya, community journalism photos, journalism best practices, AGJK objectives, AGJK events"
+        />
+        <meta property="og:title" content="Highlights 2024 | AGJK Kenya" />
+        <meta
+          property="og:description"
+          content="Dive into the 2024 AGJK Conference: key insights, focus areas, and a visual gallery honoring grassroots media professionals across Kenya."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.agjkenya.com/highlights-2024" />
+        <meta property="og:image" content="https://www.agjkenya.com/images/og-highlights-2024.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Highlights 2024 | AGJK Kenya" />
+        <meta
+          name="twitter:description"
+          content="Relive the moments from AGJK’s 2024 Conference – where grassroots journalists united for innovation, awareness, and impact."
+        />
+        <meta name="twitter:image" content="https://www.agjkenya.com/images/twitter-highlights-2024.jpg" />
+        <link rel="canonical" href="https://www.agjkenya.com/highlights-2024" />
+      </Helmet>
+
+
       {/* Hero Section */}
       <div className="bg-[#640433] text-white py-24 px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Highlights 2024</h1>
@@ -51,14 +81,14 @@ const HighlightsPage = () => {
         </p>
       </div>
 
-      
+
       {/* Areas of Focus */}
       <div className="bg-[#f8f4f4] py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-[#640433] mb-12 text-center">Areas of Focus</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {focusAreas.map((area, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-[#640433] hover:border-t-8"
               >
@@ -76,7 +106,7 @@ const HighlightsPage = () => {
         <h2 className="text-3xl font-bold text-[#640433] mb-12 text-center">Key Objectives</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {objectives.map((obj, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
@@ -94,10 +124,10 @@ const HighlightsPage = () => {
       <div className="bg-gray-100 py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-[#640433] mb-12 text-center">Gallery</h2>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
             {displayedImages.map((image) => (
-              <div 
+              <div
                 key={image.id}
                 className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group"
               >
@@ -107,12 +137,6 @@ const HighlightsPage = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                  <div className="text-white">
-                    <p className="font-bold text-sm md:text-base">{image.alt}</p>
-                    <p className="text-xs opacity-90 capitalize">{image.category}</p>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
@@ -129,17 +153,7 @@ const HighlightsPage = () => {
                 View All Photos ({galleryImages.length})
               </button>
             )}
-            {showAllImages && (
-              <button
-                onClick={() => setShowAllImages(false)}
-                className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-                </svg>
-                Show Less
-              </button>
-            )}
+
             <a
               href={externalGalleryUrl}
               target="_blank"
@@ -151,9 +165,21 @@ const HighlightsPage = () => {
               </svg>
               View Full Gallery
             </a>
+
+            <a
+              href="/gallery"
+              className="bg-[#640433] hover:bg-[#4e0125] text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M4 3a1 1 0 011-1h10a1 1 0 011 1v3h-2V4H6v12h8v-2h2v3a1 1 0 01-1 1H5a1 1 0 01-1-1V3z" />
+                <path d="M13 7l5 3-5 3V7z" />
+              </svg>
+              Go to Internal Gallery
+            </a>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

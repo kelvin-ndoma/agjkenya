@@ -1,8 +1,10 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import youthVoicesImage from '../gallery/Youth Voice.jpg';
-import tukisongaImage from '../gallery/Youth Voices 2.jpg';
+import tukisongaImage from '../assets/songa.jpg';
 import polandKenyaImage from '../gallery/poland.jpg';
+
 
 // Animation variants
 const containerVariants = {
@@ -42,6 +44,33 @@ const fadeIn = {
 const AdvocacyCampaigns = () => {
   return (
     <div className="w-full bg-gray-50">
+       <Helmet>
+        <title>Advocacy Campaigns | AGJK - Empowering Communities Through Media</title>
+        <meta 
+          name="description" 
+          content="Discover AGJK's impactful advocacy campaigns including Youth Voices Project, Tukisonga SRHR initiative, and Kenya-Poland media collaborations. Empowering communities through media." 
+        />
+        <meta 
+          name="keywords" 
+          content="AGJK, advocacy campaigns, youth empowerment, digital literacy, SRHR, Kenya-Poland media, community radio, grassroots journalism" 
+        />
+        <meta property="og:title" content="Advocacy Campaigns | AGJK - Empowering Communities Through Media" />
+        <meta 
+          property="og:description" 
+          content="Explore our transformative media initiatives that empower youth, promote SRHR, and foster international media collaborations." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.agjkenya.com/advocacy-campaigns" />
+        <meta property="og:image" content="https://www.agjkenya.com/images/og-advocacy-campaigns.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Advocacy Campaigns | AGJK" />
+        <meta 
+          name="twitter:description" 
+          content="Our initiatives empower communities through media, education, and cross-cultural collaborations." 
+        />
+        <meta name="twitter:image" content="https://www.agjkenya.com/images/twitter-advocacy-campaigns.jpg" />
+        <link rel="canonical" href="https://www.agjkenya.com/advocacy-campaigns" />
+      </Helmet>
       {/* Hero Section */}
       <motion.section 
         className="w-full bg-gradient-to-br py-24 md:py-32 relative overflow-hidden"
