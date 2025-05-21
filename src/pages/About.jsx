@@ -114,49 +114,53 @@ const About = () => {
     }
   ];
 
+
   return (
-    <div className="overflow-hidden bg-gray-50">
+    <div className="overflow-hidden bg-[#faf7f5]">
       <Helmet>
         <title>About AGJK – Empowering Community Journalists in Kenya</title>
-        <meta
-          name="description"
-          content="Learn about AGJK's mission, leadership, and impact pillars in empowering grassroots journalists, promoting advocacy, and driving social change in Kenya."
-        />
-        <meta name="keywords" content="AGJK, grassroots journalism, community media Kenya, media advocacy, journalist training, AGJK team, AGJK mission, AGJK pillars" />
-        <meta property="og:title" content="About AGJK – Empowering Community Journalists in Kenya" />
-        <meta property="og:description" content="Meet the AGJK team and discover how we build capacity, lead advocacy, and drive community impact through grassroots journalism in Kenya." />
-        <meta property="og:type" content="website" />
+        <meta name="description" content="Learn about AGJK's mission, leadership, and impact pillars in empowering grassroots journalists, promoting advocacy, and driving social change in Kenya." />
       </Helmet>
       
-      {/* Combined About and Mission Section */}
-      <section className="max-w-7xl mx-auto px-6 pt-16 pb-12">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900">
-            About <span className="text-maroon-600">Us</span>
-          </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Get to know who we are, what we stand for, and how we're making an impact.
-          </p>
+      {/* Hero Section */}
+      <section className="relative bg-[#640433] text-white py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              About <span className="text-[#f8b739]">AGJK</span>
+            </h1>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
+              Empowering grassroots journalism for social transformation in Kenya
+            </p>
+          </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#faf7f5] to-transparent"></div>
+      </section>
 
-        <div className="bg-white rounded-xl shadow-sm p-8 md:p-10 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-            Our <span className="text-maroon-600">Mission</span>
-          </h2>
-          <div className="space-y-5 text-gray-700 leading-relaxed">
-            <p className="text-lg">
+      {/* Mission Section */}
+      <section className="max-w-5xl mx-auto px-6 py-16 -mt-10 relative z-10">
+        <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 border-l-8 border-[#640433]">
+          <div className="flex items-center mb-6">
+            <div className="w-12 h-12 bg-[#640433] rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">✊</div>
+            <h2 className="text-3xl font-bold text-gray-900">
+              Our <span className="text-[#640433]">Mission</span>
+            </h2>
+          </div>
+          <div className="space-y-5 text-gray-700 leading-relaxed text-lg">
+            <p>
               AGJK supports media viability in Kenya by empowering community, citizen, and school journalists through skill-building, advocacy, and strategic partnerships.
             </p>
-            <p className="text-lg">
-              We work with a diverse network of community media practitioners—across radio, TV, blogs, and freelance platforms—who uphold high professional standards and deliver relevant, factual content.
+            <p>
+              We are present in <span className="font-semibold text-[#640433]">42 counties</span> in Kenya, with a membership of over <span className="font-semibold text-[#640433]">500 registered members</span> and over <span className="font-semibold text-[#640433]">80 community media outlets</span> across the country.
             </p>
-            <p className="text-lg">
+            <p>
               Despite financial and operational challenges, community media in Kenya continues to serve its audiences with impactful journalism, especially during critical moments like the pandemic and elections.
             </p>
           </div>
         </div>
       </section>
 
+     
       {/* Team Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
@@ -187,65 +191,67 @@ const About = () => {
       </section>
 
       {/* Pillars Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 bg-white">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Our <span className="text-maroon-600">Pillars</span>
-          </h2>
-          <p className="mt-4 text-xl text-maroon-600 font-medium max-w-3xl mx-auto">
-            The foundation of our impact: Core principles that drive our mission forward
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {pillars.map((pillar, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-gray-200 h-full bg-white">
-              <div className="relative z-10 p-6 h-full flex flex-col">
-                <div className="text-5xl mb-4 text-maroon-600">{pillar.icon}</div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{pillar.title}</h3>
-                  <h4 className="text-lg font-medium text-gray-600 mb-4">{pillar.subtitle}</h4>
+      <section className="py-16 bg-[#640433]/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">
+              Our <span className="text-[#640433]">Strategic</span> Pillars
+            </h2>
+            <div className="w-24 h-1 bg-[#640433] mx-auto mt-4"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {pillars.map((pillar, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                <div className="p-8 h-full">
+                  <div className="text-5xl mb-6 text-[#640433]">{pillar.icon}</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{pillar.title}</h3>
+                  <h4 className="text-lg font-medium text-[#640433] mb-4">{pillar.subtitle}</h4>
+                  <p className="text-gray-700 leading-relaxed">{pillar.description}</p>
                 </div>
-                <p className="text-gray-700 text-lg leading-relaxed flex-grow">{pillar.description}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Interventions Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Our <span className="text-maroon-600">Interventions</span>
-          </h2>
-          <p className="mt-4 text-xl text-maroon-600 font-medium max-w-3xl mx-auto">
-            Areas of impact: Where we make a difference
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {interventions.map((intervention, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-transparent h-full bg-white">
-              <div className="relative z-10 p-6 h-full flex flex-col">
-                <div className="text-5xl mb-4 text-maroon-600">{intervention.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{intervention.title}</h3>
-                <p className="text-gray-700 leading-relaxed mb-4 flex-grow">{intervention.description}</p>
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">
+              Key <span className="text-[#640433]">Intervention</span> Areas
+            </h2>
+            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+              Creating impact where it matters most
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {interventions.map((intervention, index) => (
+              <div key={index} className="border border-gray-200 rounded-xl p-6 hover:border-[#640433]/30 transition-all duration-300 group hover:shadow-md">
+                <div className="text-4xl mb-4 text-[#640433]">{intervention.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#640433] transition-colors duration-300">
+                  {intervention.title}
+                </h3>
+                <p className="text-gray-700">{intervention.description}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Partners Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 bg-gray-50">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Our <span className="text-maroon-600">Partners</span>
-          </h2>
-          <p className="mt-4 text-xl text-maroon-600 font-medium max-w-3xl mx-auto">
-            Collaborative excellence: Building bridges for better journalism
-          </p>
+      <section className="py-16 bg-[#faf7f5]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">
+              Our <span className="text-[#640433]">Partners</span>
+            </h2>
+            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+              Collaborative excellence in grassroots journalism
+            </p>
+          </div>
+          <Marquee />
         </div>
-        <Marquee />
       </section>
     </div>
   );

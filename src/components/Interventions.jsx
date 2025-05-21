@@ -13,7 +13,7 @@ export const Interventions = ({ interventions }) => {
       case "Gender":
         return "👩‍💼"; // Woman professional
       case "Health":
-        return "🚫"; // No symbol (for misinformation)
+        return "📰❓"; // No symbol (for misinformation)
       case "Governance & Social Accountability":
         return "⚖️"; // Scales of justice
       case "Environment and Climate Change":

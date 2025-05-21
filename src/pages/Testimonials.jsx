@@ -62,7 +62,7 @@ export const Testimonials = () => {
                 <p className="text-2xl md:text-4xl font-bold text-[#640433] mb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-8">What people say?</p>
             </motion.div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:gap-8">
                 {testimonialsData.map((testimonial, index) => (
                     <TestimonialCard key={index} {...testimonial} />
                 ))}
