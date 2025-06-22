@@ -2,23 +2,23 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import community from '../gallery/community.jpg';
+import community from '../../public/gallery/community.jpg';
 import conferenceImg from '../assets/mic.jpg';
-import Awards from '../gallery/Awards.jpg';
+import Awards from '../../public/gallery/Awards.jpg';
 import trainingImg from '../assets/workshop.jpg';
 import networkingImg from '../assets/work.png';
-import Media from '../gallery/media.jpg'
+import Media from '../../public/gallery/media.jpg'
 import pannel from '../assets/pannel.jpg'
 import Highlight1 from '../assets/Awards1.jpg'
-import Highlight2 from '../gallery/Awards2.jpg'
-import Highlight3 from '../gallery/Awards3.jpg'
-import Highlight4 from '../gallery/Awards4.jpg'
-import Highlight5 from '../gallery/Highlight5.jpg'
-import Highlight6 from '../gallery/Awards 6.jpg'
-import Highlight7 from '../gallery/Highlight7.jpg'
-import Highlight8 from '../gallery/Awards8.jpg'
-import Highlight9 from '../gallery/Awards9.jpg'
-import Highlight10 from '../gallery/Awards10.jpg'
+import Highlight2 from '../../public/gallery/Awards2.jpg'
+import Highlight3 from '../../public/gallery/Awards3.jpg'
+import Highlight4 from '../../public/gallery/Awards4.jpg'
+import Highlight5 from '../../public/gallery/Highlight5.jpg'
+import Highlight6 from '../../public/gallery/Awards 6.jpg'
+import Highlight7 from '../../public/gallery/Highlight7.jpg'
+import Highlight8 from '../../public/gallery/Awards8.jpg'
+import Highlight9 from '../../public/gallery/Awards9.jpg'
+import Highlight10 from '../../public/gallery/Awards10.jpg'
 
 
 

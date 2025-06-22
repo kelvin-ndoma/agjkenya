@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import conferenceImage from '../gallery/7.jpg'; // Update with your image path
+import conferenceImage from '../../public/gallery/7.jpg'; // Update with your image path
 
 const Popup = () => {
   const [isVisible, setIsVisible] = useState(false);

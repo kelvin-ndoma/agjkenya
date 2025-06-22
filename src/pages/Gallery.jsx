@@ -6,7 +6,7 @@ import { useSwipeable } from "react-swipeable";
 const Gallery = () => {
   const imageCount = 24;
   const images = Array.from({ length: imageCount }, (_, i) => ({
-    src: `/src/gallery/${i + 1}.jpg`,
+    src: `/gallery/${i + 1}.jpg`,
     alt: `Gallery image ${i + 1}`,
     id: `img-${i + 1}`
   }));

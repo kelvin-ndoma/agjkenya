@@ -1,9 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import youthVoicesImage from '../gallery/Youth Voice.jpg';
+import youthVoicesImage from '../../public/gallery/Youth Voice.jpg';
+import polandKenyaImage from '../../public/gallery/poland.jpg';
+
 import tukisongaImage from '../assets/songa.jpg';
-import polandKenyaImage from '../gallery/poland.jpg';
 
 
 // Animation variants
