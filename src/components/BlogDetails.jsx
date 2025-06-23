@@ -19,14 +19,14 @@ const BlogDetails = () => {
         setLoading(true);
         setError(null);
         
-        const blogRes = await axios.get(`http://localhost:4000/api/blogs/${id}`);
+        const blogRes = await axios.get(`https://agj-backend.vercel.app/api/blogs/${id}`);
         if (!blogRes.data || !blogRes.data.success || !blogRes.data.data) {
           throw new Error('Invalid blog data format');
         }
         setBlog(blogRes.data.data);
 
         const relatedRes = await axios.get(
-          `http://localhost:4000/api/blogs?category=${blogRes.data.data.category}&limit=3`
+          `https://agj-backend.vercel.app/api/blogs?category=${blogRes.data.data.category}&limit=3`
         );
         if (!relatedRes.data || !relatedRes.data.success || !Array.isArray(relatedRes.data.data)) {
           throw new Error('Invalid related blogs data format');

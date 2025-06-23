@@ -33,7 +33,7 @@ const BlogList = () => {
       try {
         setLoading(true);
         setError(null);
-        const res = await axios.get('http://localhost:4000/api/blogs');
+        const res = await axios.get('https://agj-backend.vercel.app/api/blogs');
         
         // Updated to match your API response structure
         if (!res.data || !res.data.success || !Array.isArray(res.data.data)) {
