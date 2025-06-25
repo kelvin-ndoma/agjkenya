@@ -35,12 +35,11 @@ const BlogList = () => {
         setError(null);
         const res = await axios.get('https://agj-backend.vercel.app/api/blogs');
         
-        // Updated to match your API response structure
         if (!res.data || !res.data.success || !Array.isArray(res.data.data)) {
           throw new Error('Invalid data format received from server');
         }
         
-        setBlogs(res.data.data); // Changed from res.data.blogs to res.data.data
+        setBlogs(res.data.data);
       } catch (error) {
         console.error('Error fetching blogs:', error);
         setError(error.response?.data?.message || error.message || 'Failed to load blogs');
@@ -60,15 +59,21 @@ const BlogList = () => {
   const filteredBlogs = blogs.filter(blog => {
     if (!blog) return false;
     
-    // Category filter
-    const categoryMatch = activeFilter === 'All' || 
-                         blog.category?.toLowerCase() === activeFilter.toLowerCase();
+    // Check if activeFilter is a subcategory
+    const isSubcategoryFilter = AWARDS_SUBCATEGORIES.includes(activeFilter);
+    
+    // Category/subcategory filter
+    const categoryMatch = 
+      activeFilter === 'All' || 
+      (isSubcategoryFilter 
+        ? blog.subcategory === activeFilter 
+        : blog.category === activeFilter);
     
     // Search filter (title, description, author)
     const searchMatch = searchQuery === '' || 
-                       blog.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                       (blog.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
                        blog.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                       blog.author?.toLowerCase().includes(searchQuery.toLowerCase());
+                       blog.author?.toLowerCase().includes(searchQuery.toLowerCase()));
     
     return categoryMatch && searchMatch;
   });
@@ -149,8 +154,8 @@ const BlogList = () => {
           ))}
         </div>
 
-        {/* AGJ Awards Subfilter */}
-        {activeFilter === 'AGJ Awards' && (
+        {/* AGJ Awards Subfilter - Shows when AGJ Awards or any subcategory is selected */}
+        {(activeFilter === 'AGJ Awards' || AWARDS_SUBCATEGORIES.includes(activeFilter)) && (
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8">
             <button
               onClick={() => setActiveFilter('AGJ Awards')}
