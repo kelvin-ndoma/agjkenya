@@ -66,7 +66,7 @@ const BlogItem = ({
         <div className="mt-auto">
           <div className="flex items-center gap-3">
             <div>
-              {author && <p className="text-sm font-medium text-gray-900">{author}</p>}
+              {author && <p className="text-sm font-medium text-gray-900">Blog by : {author}</p>}
               {createdAt && (
                 <p className="text-xs text-gray-500">
                   {format(new Date(createdAt), 'MMM d, yyyy')}
