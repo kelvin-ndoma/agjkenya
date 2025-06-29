@@ -143,13 +143,9 @@ const BlogDetails = () => {
 
             <div className="flex flex-col items-center">
               <div className="flex items-center mb-4">
-                <img
-                  className="w-12 h-12 rounded-full border-2 border-white border-opacity-50 mr-3"
-                  src={blog.authorImg}
-                  alt={blog.author}
-                />
+               
                 <div>
-                  <p className="font-medium text-white">{blog.author}</p>
+                  <p className="font-medium text-white">By: {blog.author}</p>
                   <p className="text-sm text-purple-200">
                     {format(new Date(blog.createdAt), 'MMMM d, yyyy')}
                   </p>
@@ -217,7 +213,6 @@ const BlogDetails = () => {
 
           {blog.conclusion && (
             <section className="mt-12">
-              <h3 className="text-2xl font-semibold text-[#640433] mb-4">Conclusion</h3>
               <div className="text-gray-700 leading-relaxed space-y-4">
                 {blog.conclusion.split('\n').map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
@@ -260,7 +255,6 @@ const BlogDetails = () => {
                 subcategory={relatedBlog.subcategory}
                 awardType={relatedBlog.awardType}
                 author={relatedBlog.author}
-                authorImg={relatedBlog.authorImg}
                 image={relatedBlog.image}
                 featured={relatedBlog.featured}
                 createdAt={relatedBlog.createdAt}

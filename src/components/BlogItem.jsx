@@ -10,7 +10,6 @@ const BlogItem = ({
   subcategory,
   awardType,
   author,
-  authorImg,
   image,
   featured = false,
   createdAt
@@ -66,13 +65,6 @@ const BlogItem = ({
 
         <div className="mt-auto">
           <div className="flex items-center gap-3">
-            {authorImg && (
-              <img
-                src={authorImg}
-                alt={author}
-                className="w-8 h-8 rounded-full object-cover border border-gray-200"
-              />
-            )}
             <div>
               {author && <p className="text-sm font-medium text-gray-900">{author}</p>}
               {createdAt && (

@@ -206,7 +206,6 @@ const BlogList = () => {
               subcategory={blog.subcategory}
               awardType={blog.awardType}
               author={blog.author}
-              authorImg={blog.authorImg}
               image={blog.image}
               featured={blog.featured}
               createdAt={blog.createdAt}
