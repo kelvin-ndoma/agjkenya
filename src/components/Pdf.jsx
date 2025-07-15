@@ -126,7 +126,7 @@ const Pdf = () => {
       counties: [
         {
           name: "BUNGOMA",
-          stations: ["Mukwano Radio"]
+          stations: ["Mukwano Radio", "Sasa Radio", "Radio Mambo", "Kaptama Fm", "BK Radio", "Mumbo Fm"]
         },
         {
           name: "BUSIA",

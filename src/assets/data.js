@@ -121,7 +121,7 @@ export const contactInfo = [
   },
   {
     title: 'email',
-    description: 'info@agjkenya.com',
+    description: 'info@agjkenya.org',
     icon: ''
   }
 ]
