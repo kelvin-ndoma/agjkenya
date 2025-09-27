@@ -3,7 +3,7 @@
 import { animate, motion, useMotionValue, useTransform } from "framer-motion"
 import { useEffect } from "react"
 
-const Count = ({ target = 520, duration = 5 }) => {
+const Count = ({ target = 800, duration = 5 }) => {
     const count = useMotionValue(0)
     const rounded = useTransform(() => Math.round(count.get()))
 
