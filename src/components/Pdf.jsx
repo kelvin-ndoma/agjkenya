@@ -9,7 +9,7 @@ const Pdf = () => {
       counties: [
         {
           name: "NAIROBI",
-          stations: ["Ruben fm", "Pamojafm", "Mtaani Radio", "Koch Fm", "Ghetto fm"]
+          stations: ["Ruben FM", "Pamoja FM", "Mtaani Radio", "Koch FM", "Ghetto FM", "Mathare Radio"]
         },
         {
           name: "KAJIADO",
@@ -17,11 +17,23 @@ const Pdf = () => {
         },
         {
           name: "MURANG'A",
-          stations: ["Kangema", "Radio Maria"]
+          stations: ["Kangema Radio Maria"]
         },
         {
           name: "KIRINYAGA",
           stations: ["Kirinyaga Radio"]
+        },
+        {
+          name: "MERU",
+          stations: ["Mugambo FM", "Mwangaza FM", "Tuliza FM", "Nyambene TV", "Mwenge FM"]
+        },
+        {
+          name: "EMBU",
+          stations: ["Kimuri FM", "Mwendani FM", "Embu FM"]
+        },
+        {
+          name: "THARAKA NITHI",
+          stations: ["Mwandantu FM", "Getu FM"]
         }
       ]
     },
@@ -30,147 +42,135 @@ const Pdf = () => {
       counties: [
         {
           name: "TURKANA",
-          stations: ["Maata Radio", "Akicha", "Ekeyokon", "Imani", "Sayare", "Echami", "Ata Nayeche", "Ejko Fm"]
-        },
-        {
-          name: "MERU",
-          stations: ["Mugambo", "Radio Wega"]
-        },
-         {
-          name: "EMBU",
-          stations: ["Kimuri Fm"]
+          stations: ["Ekeyokon FM", "Imani FM", "Sayare FM", "Echami Radio", "Ata Nayeche", "Etoil Radio", "Sifa FM Atoo", "Akicha FM", "Maata Radio"]
         },
         {
           name: "WEST POKOT",
-          stations: ["Bibilia Husema", "Kalya Fm"]
+          stations: ["Kalya FM", "Kokwo FM", "North Rift FM"]
         }
       ]
     },
     {
-      name: "NORTHERN REGION",
-      counties: [
-        {
-          name: "ISIOLO",
-          stations: ["Radio Shahidi", "Baliti Fm"]
-        },
-        {
-          name: "MARSABIT",
-          stations: ["Sifa Fm", "Radio Jangwani"]
-        },
-        {
-          name: "SAMBURU",
-          stations: ["Serian FM", "Radio Mchungaji", "Radio Ashe"]
-        },
-        {
-          name: "WAJIR",
-          stations: ["Wajir Community Radio"]
-        },
-        {
-          name: "TANA RIVER",
-          stations: ["Amani FM"]
-        }
-      ]
+  name: "NORTHERN EASTERN REGION",
+  counties: [
+    {
+      name: "ISIOLO",
+      stations: ["Radio Shahidi", "Baliti FM", "Angaaf", "The Press Point", "Radio Nagaa"]
     },
     {
-      name: "NYANZA REGION",
-      counties: [
-        {
-          name: "HOMA BAY",
-          stations: ["Ekialo Kiona", "Gulf Radio", "Radio Arise"]
-        },
-          {
-          name: "KISII",
-          stations: ["Kisii Fm", "Vuna Fm", "Inka Fm"]
-        },
-        {
-          name: "MIGORI",
-          stations: ["Rameny FM", "Milambo Fm", "Radio Tarumbeta", "Togotane FM", "Radio Onagi"]
-        },
-        {
-          name: "KISUMU",
-          stations: ["Nyanam Radio", "Radio Lake Victoria", "Jowi Fm", "Dada Radio", "Manene Radio", "Dala Fm", "Namlolwe Fm", "Radio Maria"]
-        },
-        {
-          name: "SIAYA",
-          stations: ["Ratego Radio", "Radio Mikayi"]
-        }
-      ]
+      name: "MARSABIT",
+      stations: ["Sifa FM", "Radio Jangwani"]
     },
     {
-      name: "RIFT VALLEY REGION",
-      counties: [
-        {
-          name: "NAKURU",
-          stations: ["Radio Amani", "Hero Radio", "Radio Yetu", "Sauti ya Mwananchi"]
-        },
-        {
-          name: "LAIKIPIA",
-          stations: ["Sawanga Radio"]
-        },
-        {
-          name: "KERICHO",
-          stations: ["Radio Injili", "Konyon Fm", "Nlikop Fm", "Nyenyon FM", "BK Radio"]
-        },
-        {
-          name: "NANDI",
-          stations: ["Baraton FM"]
-        },
-        {
-          name: "NAROK",
-          stations: ["Olmaa Suswa FM", "Oltoitolemaa", "Gospo Fm"]
-        }
-      ]
+      name: "SAMBURU",
+      stations: ["Serian FM", "Radio Mchungaji"]
     },
     {
-      name: "WESTERN REGION",
-      counties: [
-        {
-          name: "BUNGOMA",
-          stations: ["Mukwano Radio", "Sasa Radio", "Radio Mambo", "Kaptama Fm", "BK Radio", "Mumbo Fm"]
-        },
-        {
-          name: "BUSIA",
-          stations: ["Bulala", "Emuria"]
-        },
-        {
-          name: "KAKAMEGA",
-          stations: ["Lubao fm", "Radio Isukuti", "West Fm"]
-        },
-         {
-          name: "TRANSNZOIA",
-          stations: ["Imani Radio", "Radio Mitume"]
-        },
-        {
-          name: "VIHIGA",
-          stations: ["Radio ANYORE", "Sema radio"]
-        }
-      ]
+      name: "WAJIR",
+      stations: ["Wajir Community Radio"]
+    }
+  ]
+},
+    {
+  name: "LAKE REGION",
+  counties: [
+    {
+      name: "HOMA BAY",
+      stations: ["Ekialo Kiona", "Gulf Radio"]
     },
     {
-      name: "COAST REGION",
-      counties: [
-        {
-          name: "TAITA TAVETA",
-          stations: ["Mwanedu"]
-        },
-         {
-          name: "TANA RIVER",
-          stations: ["VOX Radio"]
-        },
-        {
-          name: "MOMBASA",
-          stations: ["Radio Mvita", "Sheki Fm", "Radio Rahma", "Radio Tumaini"]
-        },
-        {
-          name: "KILIFI",
-          stations: ["Lulu", "Jahazi", "Radio Bayana"]
-        },
-        {
-          name: "KWALE",
-          stations: ["Kwaleranet", "Sifa Fm", "Kaya Radio"]
-        }
-      ]
+      name: "MIGORI",
+      stations: ["Milambo FM", "Togotane", "Tarumbeta", "Onagi", "Rameny FM"]
     },
+    {
+      name: "KISUMU",
+      stations: ["Nyanam Radio", "Jowi FM", "Radio Lake Victoria", "Radio Namlolwe", "Dada Radio", "Manene Radio", "Radio Maria", "Dala Fm"]
+    },
+    {
+      name: "SIAYA",
+      stations: ["Ratego Radio", "Radio Mikayi"]
+    },
+    {
+      name: "KISII",
+      stations: ["Kisii FM", "Radio Vuna", "Seito FM", "Radio Kisima", "The Kuntu Media House"]
+    }
+  ]
+},
+    {
+  name: "RIFT VALLEY REGION",
+  counties: [
+    {
+      name: "NAKURU",
+      stations: ["Radio Amani", "Hero Radio", "Radio Yetu", "Sauti ya Mwananchi"]
+    },
+    {
+      name: "LAIKIPIA",
+      stations: ["Sawanga Radio"]
+    },
+    {
+      name: "KERICHO",
+      stations: ["Radio Injili", "Just Fm", "Radio Light and Life", "Tai Fm", "Nyenon", "BK Radio"]
+    },
+    {
+      name: "NANDI",
+      stations: ["Baraton FM"]
+    },
+    {
+      name: "KITALE",
+      stations: ["Imani Radio"]
+    },
+    {
+      name: "NAROK",
+      stations: ["Gospo Fm", "Radio Osotua", "Hosana Fm", "Sidai Fm"]
+    }
+  ]
+},
+    {
+  name: "WESTERN REGION",
+  counties: [
+    {
+      name: "BUNGOMA",
+      stations: ["Mukwano Radio", "Sasa Radio", "Radio mambo", "Kaptama Fm", "Mumbo Fm"]
+    },
+    {
+      name: "BUSIA",
+      stations: ["Bulala", "Emuria"]
+    },
+    {
+      name: "KAKAMEGA",
+      stations: ["Lubao FM"]
+    },
+    {
+      name: "VIHIGA",
+      stations: ["Radio Anyore", "Sema Radio"]
+    }
+  ]
+},
+    {
+  name: "COAST REGION",
+  counties: [
+    {
+      name: "TAITA TAVETA",
+      stations: ["Mwanedu"]
+    },
+    {
+      name: "MOMBASA",
+      stations: ["Radio Mvita", "Radio Rahma", "Sheki FM"]
+    },
+    {
+      name: "KILIFI",
+      stations: ["Lulu FM", "Jahazi FM"]
+    },
+    {
+      name: "KWALE",
+      stations: ["Kwaleranet", "Sifa FM"]
+    },
+    {
+      name: "TANA RIVER",
+      stations: ["Imani Radio", "Vox Radio", "Tana Fm"]
+    }
+  ]
+},
     {
       name: "EASTERN REGION",
       counties: [
@@ -203,14 +203,14 @@ const Pdf = () => {
       <h3 className="text-lg font-semibold text-[#640433] mb-4 text-left">
         Member Radio Stations by Region
       </h3>
-      
+
       <div className="space-y-3">
         {regionsData.map((region, regionIndex) => (
-          <motion.div 
+          <motion.div
             key={regionIndex}
             className="border border-[#640433]/20 rounded-lg overflow-hidden shadow-sm"
             initial={false}
-            animate={{ 
+            animate={{
               backgroundColor: expandedRegion === regionIndex ? '#f9fafb' : '#fff'
             }}
             transition={{ duration: 0.2 }}
@@ -257,7 +257,7 @@ const Pdf = () => {
                         className="pl-5 mt-1 space-y-1"
                       >
                         {county.stations.map((station, stationIndex) => (
-                          <motion.li 
+                          <motion.li
                             key={stationIndex}
                             className="py-1 px-3 bg-white rounded-md border border-gray-100 shadow-xs text-sm text-gray-600"
                             whileHover={{ scale: 1.02 }}
