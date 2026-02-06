@@ -61,6 +61,15 @@ const Contact = () => {
     }
   };
 
+  const handleJoinNow = () => {
+    // Redirect to Google Forms membership registration
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSfPjK35Hj2tvfzzsMlYLXaDp1DLEhzLqfzPRKDDLznwUGk7Pw/viewform',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
+
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -72,7 +81,7 @@ const Contact = () => {
           />
           <meta
             name="keywords"
-            content="AGJK Kenya contact, grassroots journalism support, media inquiries Kenya, journalism Kenya, contact AGJK, journalist mentorship Kenya"
+            content="AGJK Kenya contact, grassroots journalism support, media inquiries Kenya, journalism Kenya, contact AGJK, journalist mentorship Kenya, AGJK membership"
           />
           <meta property="og:title" content="Contact Us | AGJK Kenya" />
           <meta
@@ -96,6 +105,123 @@ const Contact = () => {
         <h2 className="text-4xl font-extrabold text-center mb-8 text-[#640433]">
           Contact Us
         </h2>
+
+        {/* Membership Banner Section - Updated with consistent messaging */}
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-r from-[#640433]/10 to-[#8a0c4a]/10 rounded-2xl border border-[#640433]/20">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#640433] mb-2">
+              Association of Grassroot Journalists Kenya (AGJK) – Membership
+            </h3>
+            <div className="h-1 w-24 bg-[#640433] mx-auto mb-4"></div>
+          </div>
+          
+    
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Benefits Section */}
+            <div className="bg-white p-6 rounded-xl border border-gray-200">
+              <h4 className="text-xl font-bold text-[#640433] mb-4 pb-2 border-b border-gray-200">
+                Benefits of Joining AGJK
+              </h4>
+              
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="bg-[#640433] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">1</span>
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Opportunity to connect</span> with fellow journalists, industry experts, and media practitioners across the country.
+                  </p>
+                </li>
+                
+                <li className="flex items-start">
+                  <span className="bg-[#640433] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">2</span>
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Access to AGJK Resources</span> which include learning materials, toolkits, research reports, and technical support.
+                  </p>
+                </li>
+                
+                <li className="flex items-start">
+                  <span className="bg-[#640433] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">3</span>
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Capacity Building</span> through workshops, seminars, and mentorship programs to enhance journalistic skills.
+                  </p>
+                </li>
+                
+                <li className="flex items-start">
+                  <span className="bg-[#640433] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">4</span>
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Professional Recognition</span> through opportunities for awards, certifications, and showcasing work through AGJK platforms.
+                  </p>
+                </li>
+                
+                <li className="flex items-start">
+                  <span className="bg-[#640433] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">5</span>
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Information Sharing</span> through updates on media trends, grants, and industry developments.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Registration Call to Action */}
+            <div className="bg-white p-6 rounded-xl border border-gray-200 flex flex-col">
+              <h4 className="text-xl font-bold text-[#640433] mb-4 pb-2 border-b border-gray-200">
+                Join Our Network
+              </h4>
+              
+              <div className="mb-6 flex-grow">
+                <p className="text-gray-700 mb-4">
+                  Kindly fill in this form to apply for AGJK membership. All information provided will be treated confidentially.
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Free membership registration</span>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Open to all grassroots journalists</span>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Community media outlets welcome</span>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Simple 5-minute application</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center pt-4 border-t border-gray-200">
+                <button
+                  onClick={handleJoinNow}
+                  className="w-full px-8 py-3 bg-gradient-to-r from-[#640433] to-[#8a0c4a] text-white font-bold text-lg rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center"
+                >
+                  <span>Register for AGJK Membership</span>
+                  <svg className="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </button>
+                
+                <p className="text-xs text-gray-500 mt-4">
+                  All information provided in the registration form is treated with strict confidentiality
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
           {/* form */}
